@@ -3,8 +3,10 @@
     color: black;
     font-family: 'Yellowtail';
     font-size: 2em;
-    margin-top: 10px;
-    margin-bottom: 5px;
+    /* margin-top: 10px; */
+    /* margin-bottom: 7px; */
+    padding-top: 10px;
+    padding-bottom: 7px;
 }
 
 .space {
@@ -14,9 +16,16 @@
 .logo {
     height: 2em;
     width: 2em;
+    padding: 2px;
 }
 
 .icon {
     font-size: 1.5em;
     padding-bottom: 0.5em;
+    margin: 2px;
+}
+
+a {
+    font-family: 'Yellowtail';
+    font-size: 1em;
 }

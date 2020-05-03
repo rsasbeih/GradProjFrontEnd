@@ -20,3 +20,11 @@ a {
     text-decoration: none;
     color: black;
 }
+
+.background {
+    /*  background-color: #341e65;*/
+    background-color: #f0f7fb;
+    height: 31em;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

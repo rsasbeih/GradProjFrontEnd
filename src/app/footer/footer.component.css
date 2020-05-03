@@ -1,0 +1,22 @@
+.main-footer {
+    background-color: #321e65;
+    color: white;
+    display: flex;
+}
+
+.flex-child {
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 0.5em;
+}
+
+h2 {
+    font-family: "Yellowtail";
+    font-size: 3em;
+}
+
+li {
+    padding: 0.5em;
+    font-family: 'Lora';
+    list-style-type: none;
+}
