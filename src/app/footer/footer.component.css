@@ -20,3 +20,7 @@ li {
     font-family: 'Lora';
     list-style-type: none;
 }
+
+a {
+    color: white;
+}
