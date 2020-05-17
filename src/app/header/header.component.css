@@ -4,9 +4,10 @@
     font-family: 'Yellowtail';
     font-size: 2em;
     /* margin-top: 10px; */
-    /* margin-bottom: 7px; */
     padding-top: 10px;
     padding-bottom: 7px;
+    margin-bottom: 10px;
+    background-color: none;
 }
 
 .space {
@@ -28,4 +29,8 @@
 a {
     font-family: 'Yellowtail';
     font-size: 1em;
+}
+
+.mat-toolbar {
+    background-color: #f0f7fb;
 }

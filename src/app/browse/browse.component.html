@@ -1,0 +1,82 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div class="background">
+    <h1>Best Venues</h1>
+    <div class="container">
+        <div class="child">
+            <div style="padding-left:1em; padding-top: 2em;">
+                <mat-form-field appearance="fill">
+                    <mat-label>Event Type
+                        <mat-icon>event</mat-icon>
+                    </mat-label>
+                    <mat-select>
+                        <mat-option value="option">Option</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <br>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Location
+                        <mat-icon>edit_location</mat-icon>
+                    </mat-label>
+                    <mat-select>
+                        <mat-option value="option">Option</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <br>
+                <mat-form-field appearance="fill">
+                    <mat-label>Number of People
+                        <mat-icon>people</mat-icon>
+                    </mat-label>
+                    <input matInput>
+                </mat-form-field>
+                <br>
+                <mat-form-field>
+                    <input matInput [matDatepicker]="picker" placeholder="Date of Event">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker startView="year" [startAt]="startDate"></mat-datepicker>
+                </mat-form-field>
+                <br>
+
+                <h2 class="example-h2" style="text-align: center;">Other Criteria</h2>
+                <section class="example-section" style="text-align: center;">
+                    <br/>
+                    <br/>
+                    <div style="display: flex;
+                    justify-content: space-around;
+                    align-items: center;">
+                        <mat-checkbox class="example-margin" [(ngModel)]="children">Children</mat-checkbox>
+                        <mat-checkbox class="example-margin" [(ngModel)]="food">Food</mat-checkbox>
+                        <mat-checkbox class="example-margin" [(ngModel)]="wifi">Wifi</mat-checkbox>
+
+                    </div>
+
+                </section>
+            </div>
+        </div>
+        <div class="flex-child-2">
+            <ul>
+                <li *ngFor="let venues of venues">
+                    <mat-card class="example-card">
+                        <img mat-card-image src="../../assets/conferenceVenue.jpg" alt="Photo of a Venue">
+                        <mat-card-header>
+                            <div mat-card-avatar>
+                                <div>$90</div>
+                            </div>
+                            <mat-card-title>Venue Name</mat-card-title>
+                            <mat-card-subtitle>Venue Owner</mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <p>
+                                This conference room is perfect for a quick meeting.
+                            </p>
+                        </mat-card-content>
+                        <mat-card-actions align="end">
+                            <button mat-raised-button style="background-color: #4CAF50;color:white">WATCH</button>
+                            <button mat-raised-button color="primary">BOOK</button>
+                        </mat-card-actions>
+                    </mat-card>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -21,6 +21,11 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { WatchlistComponent } from './watchlist/watchlist.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowseComponent } from './browse/browse.component';
+import {MatListModule} from '@angular/material/list';
+import {MatCardModule} from '@angular/material/card';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,11 +38,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AccountComponent,
     AboutUsComponent,
     ContactUsComponent,
-    WatchlistComponent
+    WatchlistComponent,
+    BrowseComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     MatNativeDateModule,
     MatInputModule,
     MatToolbarModule,
@@ -46,6 +54,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatFormFieldModule,
     MatSelectModule,
     MatDatepickerModule,
+    MatListModule,
+    MatCardModule,
+    MatCheckboxModule,
     BrowserAnimationsModule
   ],
   providers: [MatDatepickerModule],
