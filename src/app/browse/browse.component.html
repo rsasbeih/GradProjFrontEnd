@@ -1,7 +1,7 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <div class="background">
     <h1>Best Venues</h1>
-    <div class="container">
+    <div class="container2">
         <div class="child">
             <div style="padding-left:1em; padding-top: 2em;">
                 <mat-form-field appearance="fill">
@@ -36,8 +36,8 @@
                     <mat-datepicker #picker startView="year" [startAt]="startDate"></mat-datepicker>
                 </mat-form-field>
                 <br>
-
-                <h2 class="example-h2" style="text-align: center;">Other Criteria</h2>
+                <br>
+                <h2 class="example-h2" style="text-align: center;font-size: 2em;">Other Criteria</h2>
                 <section class="example-section" style="text-align: center;">
                     <br/>
                     <br/>
@@ -45,8 +45,17 @@
                     justify-content: space-around;
                     align-items: center;">
                         <mat-checkbox class="example-margin" [(ngModel)]="children">Children</mat-checkbox>
-                        <mat-checkbox class="example-margin" [(ngModel)]="food">Food</mat-checkbox>
-                        <mat-checkbox class="example-margin" [(ngModel)]="wifi">Wifi</mat-checkbox>
+                        <mat-checkbox class="example-margin" [(ngModel)]="food">Food&nbsp;&nbsp;</mat-checkbox>
+                        <mat-checkbox class="example-margin" [(ngModel)]="wifi">Wifi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</mat-checkbox>
+
+                    </div>
+                    <br/>
+                    <div style="display: flex;
+                    justify-content: space-around;
+                    align-items: center;">
+                        <mat-checkbox class="example-margin" [(ngModel)]="price">Price&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</mat-checkbox>
+                        <mat-checkbox class="example-margin" [(ngModel)]="rating">Rating</mat-checkbox>
+                        <mat-checkbox class="example-margin" [(ngModel)]="closest">Closest</mat-checkbox>
 
                     </div>
 
@@ -55,19 +64,19 @@
         </div>
         <div class="flex-child-2">
             <ul>
-                <li *ngFor="let venues of venues">
-                    <mat-card class="example-card">
-                        <img mat-card-image src="../../assets/conferenceVenue.jpg" alt="Photo of a Venue">
+                <li *ngFor="let venue of venues">
+                    <mat-card class="example-card" routerLink="/venue_info">
+                        <img mat-card-image src="{{ venue.imageUrl }}" alt="Photo of a Venue">
                         <mat-card-header>
                             <div mat-card-avatar>
-                                <div>$90</div>
+                                <div>${{venue.price}}</div>
                             </div>
-                            <mat-card-title>Venue Name</mat-card-title>
+                            <mat-card-title>{{venue.name}}</mat-card-title>
                             <mat-card-subtitle>Venue Owner</mat-card-subtitle>
                         </mat-card-header>
                         <mat-card-content>
                             <p>
-                                This conference room is perfect for a quick meeting.
+                                {{venue.description}}
                             </p>
                         </mat-card-content>
                         <mat-card-actions align="end">

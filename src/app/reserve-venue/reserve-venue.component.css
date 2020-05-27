@@ -9,8 +9,13 @@ h1 {
     background-color: #321e65;
     color: white;
     font-weight: normal;
+    text-align: center;
 }
 
 .background {
-    height: 40em;
+    height: 50em;
+}
+
+h2 {
+    text-align: center;
 }

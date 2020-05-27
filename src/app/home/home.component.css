@@ -865,3 +865,9 @@
     background-image: url(../../assets/davisco-5E5N49RWtbA-unsplash.jpg);
     background-size: 30em, auto;
 }
+
+.h1,
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}

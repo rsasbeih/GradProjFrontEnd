@@ -26,6 +26,11 @@ import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { VenueInfoComponent } from './venue-info/venue-info.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ReserveVenueComponent } from './reserve-venue/reserve-venue.component';
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,11 +44,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AboutUsComponent,
     ContactUsComponent,
     WatchlistComponent,
-    BrowseComponent
+    BrowseComponent,
+    VenueInfoComponent,
+    ReserveVenueComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
     MatNativeDateModule,
@@ -57,7 +65,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatListModule,
     MatCardModule,
     MatCheckboxModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgbModule
   ],
   providers: [MatDatepickerModule],
   bootstrap: [AppComponent]

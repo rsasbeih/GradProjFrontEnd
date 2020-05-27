@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<div class="background">
+    <h1>{{venueName}}</h1>
+    <div class="parent">
+        <div class="child">
+            <mat-card class="example-card" routerLink="/venue_info">
+                <ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
+                    <ng-template ngbSlide *ngFor="let image of images">
+                        <div class="picsum-img-wrapper">
+                            <img [src]="image" alt="Random slide" style="height: auto;
+                            width: 38em;">
+                        </div>
+                        <div class="carousel-caption">
+                            <!-- <h3>No mouse navigation</h3>
+                            <p>This carousel hides navigation arrows and indicators.</p> -->
+                        </div>
+                    </ng-template>
+                </ngb-carousel>
+            </mat-card>
+            <!-- <ngb-rating></ngb-rating> -->
+        </div>
+        <div class="child">
+            <mat-card class="example-card example-card2" routerLink="/venue_info">
+                <mat-card-header>
+                    <div mat-card-avatar>
+                        <div>{{venuePrice}}</div>
+                    </div>
+                    <mat-card-title>{{venueName}}</mat-card-title>
+                    <mat-card-subtitle>{{venueOwner}}</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <p>
+                        This conference room is perfect for a quick meeting.
+                    </p>
+                    <br>
+                    <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                    </p>
+                    <br>
+                    <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                    </p>
+                    <br>
+                    <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                    </p>
+
+                </mat-card-content>
+                <mat-card-actions align="end">
+                    <button mat-raised-button style="background-color: #4CAF50;color:white">WATCH</button>
+                    <button mat-raised-button color="primary" routerLink="/reserve_venue">BOOK</button>
+                </mat-card-actions>
+            </mat-card>
+
+        </div>
+    </div>
+</div>
