@@ -10,6 +10,7 @@ import { WatchlistComponent } from './watchlist/watchlist.component';
 import { BrowseComponent } from './browse/browse.component';
 import { VenueInfoComponent } from './venue-info/venue-info.component';
 import { ReserveVenueComponent } from './reserve-venue/reserve-venue.component';
+import { BOProfileComponent } from './boprofile/boprofile.component';
 
 
 const routes: Routes = [
@@ -23,8 +24,8 @@ const routes: Routes = [
   {path: 'browse',component: BrowseComponent},
   {path: 'venue_info',component: VenueInfoComponent},
   {path: 'venue_info/:id',component: VenueInfoComponent},
-  {path: 'reserve_venue',component: ReserveVenueComponent}
-  
+  {path: 'reserve_venue',component: ReserveVenueComponent},
+  {path: 'boprofile',component: BOProfileComponent}
 ];
 
 @NgModule({

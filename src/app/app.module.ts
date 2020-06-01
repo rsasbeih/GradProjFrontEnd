@@ -30,6 +30,7 @@ import { VenueInfoComponent } from './venue-info/venue-info.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReserveVenueComponent } from './reserve-venue/reserve-venue.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BOProfileComponent } from './boprofile/boprofile.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { HttpClientModule } from '@angular/common/http';
     WatchlistComponent,
     BrowseComponent,
     VenueInfoComponent,
-    ReserveVenueComponent
+    ReserveVenueComponent,
+    BOProfileComponent
   ],
   imports: [
     BrowserModule,

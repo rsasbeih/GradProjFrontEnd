@@ -14,3 +14,11 @@ h1 {
 .background {
     height: 40em;
 }
+.about-us {
+    max-width: 1000px;
+    height: 100px;
+    display: inline-block;
+    font-family: "Times New Roman", Times, serif;
+
+
+}
