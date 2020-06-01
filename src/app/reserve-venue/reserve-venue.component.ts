@@ -17,6 +17,8 @@ export class ReserveVenueComponent implements OnInit {
   lastName = new FormControl('', [Validators.required]);
   numOfPeople = new FormControl('', [Validators.required]);
   timeOfReservation  = new FormControl('', [Validators.required]);
+  datePicker = new FormControl('', [Validators.required]);
+  phone= new FormControl('', [Validators.required]);
   getErrorMessage() {
     if (this.email.hasError('required')) {
       return 'You must enter a value';
@@ -44,5 +46,14 @@ export class ReserveVenueComponent implements OnInit {
       return 'You must enter a value';
     }
   }
-
+  getDatePickerMessage(){
+    if (this.datePicker.hasError('required')) {
+      return 'You must enter a value';
+    }
+  }
+  getPhoneMessage(){
+    if (this.phone.hasError('required')) {
+      return 'You must enter a value';
+    }
+  }
 }

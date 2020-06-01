@@ -7,8 +7,10 @@
                 <ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
                     <ng-template ngbSlide *ngFor="let image of images">
                         <div class="picsum-img-wrapper">
-                            <img [src]="image" alt="Random slide" style="height: auto;
-                            width: 38em;">
+                            <!-- <img [src]="image" alt="Random slide" style="height: auto;
+                            width: 38em;"> -->
+                            <img src="{{venueImg}}" alt="Random slide" style="height: auto;
+                             width: 38em;">
                         </div>
                         <div class="carousel-caption">
                             <!-- <h3>No mouse navigation</h3>
@@ -20,30 +22,26 @@
             <!-- <ngb-rating></ngb-rating> -->
         </div>
         <div class="child">
-            <mat-card class="example-card example-card2" routerLink="/venue_info">
+            <mat-card class="example-card example-card2">
                 <mat-card-header>
                     <div mat-card-avatar>
-                        <div>{{venuePrice}}</div>
+                        <div>${{venuePrice}}</div>
                     </div>
                     <mat-card-title>{{venueName}}</mat-card-title>
                     <mat-card-subtitle>{{venueOwner}}</mat-card-subtitle>
                 </mat-card-header>
                 <mat-card-content>
                     <p>
-                        This conference room is perfect for a quick meeting.
+                        {{venueDescp}}
                     </p>
                     <br>
                     <p>
-                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                        {{venueDescp}}
                     </p>
                     <br>
                     <p>
-                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
-                    </p>
-                    <br>
-                    <p>
-                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
-                    </p>
+                        {{venueDescp}} </p>
+
 
                 </mat-card-content>
                 <mat-card-actions align="end">

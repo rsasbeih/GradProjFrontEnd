@@ -19,3 +19,8 @@ h1 {
 h2 {
     text-align: center;
 }
+
+.mat-form-field {
+    width: 50%;
+    margin: 2px;
+}

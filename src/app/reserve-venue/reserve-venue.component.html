@@ -11,10 +11,10 @@
             <div class="example-container">
                 <mat-form-field color="accent">
                     <mat-label>Date of Reservation</mat-label>
-                    <input matInput [matDatepicker]="picker1" required>
+                    <input matInput [matDatepicker]="picker1" [formControl]="datePicker" required>
                     <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
                     <mat-datepicker #picker1></mat-datepicker>
-                    <mat-error *ngIf="firstName.invalid">{{getFirstNameErrorMessage()}}</mat-error>
+                    <mat-error *ngIf="datePicker.invalid">{{getDatePickerMessage()}}</mat-error>
                 </mat-form-field>
             </div>
             <!-- <div class="example-container">
@@ -48,7 +48,8 @@
             <div class="example-container">
                 <mat-form-field appearance="fill">
                     <mat-label>Telephone</mat-label>
-                    <input type="tel" matInput placeholder="555-555-1234">
+                    <input type="tel" matInput placeholder="555-555-1234" [formControl]="phone" required>
+                    <mat-error *ngIf="numOfPeople.invalid">{{getPhoneMessage()}}</mat-error>
                 </mat-form-field>
             </div>
             <div class="example-container">

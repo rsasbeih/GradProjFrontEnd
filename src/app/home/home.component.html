@@ -73,7 +73,9 @@
                                                                 <mat-form-field appearance="fill">
                                                                     <mat-label>Event Type</mat-label>
                                                                     <mat-select>
-                                                                        <mat-option value="option">Option</mat-option>
+                                                                        <mat-option value="option">Wedding</mat-option>
+                                                                        <mat-option value="option">Conference</mat-option>
+                                                                        <mat-option value="option">Party</mat-option>
                                                                     </mat-select>
                                                                 </mat-form-field>
                                                                 <br>
@@ -81,18 +83,19 @@
                                                                 <mat-form-field appearance="fill">
                                                                     <mat-label>Location</mat-label>
                                                                     <mat-select>
-                                                                        <mat-option value="option">Option</mat-option>
+                                                                        <mat-option value="option">Ramallah</mat-option>
                                                                     </mat-select>
                                                                 </mat-form-field>
                                                                 <br>
-                                                                <mat-form-field>
-                                                                    <input matInput [matDatepicker]="picker" placeholder="Choose a date">
-                                                                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                                                                    <mat-datepicker #picker startView="year" [startAt]="startDate"></mat-datepicker>
+                                                                <mat-form-field color="accent">
+                                                                    <mat-label>Date of Reservation</mat-label>
+                                                                    <input matInput [matDatepicker]="picker1">
+                                                                    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                                                                    <mat-datepicker #picker1></mat-datepicker>
                                                                 </mat-form-field>
                                                                 <br>
 
-                                                                <button mat-raised-button style="background-color: #321e65;color: white;">SEARCH</button>
+                                                                <button mat-raised-button style="background-color: #321e65;color: white;" routerLink="/browse">SEARCH</button>
                                                             </form>
 
 
@@ -188,12 +191,12 @@
                                                 <div data-ux="GridCell" class="x-el x-el-div c1-1 c1-2 c1-3d c1-1n c1-3k c1-6v c1-19 c1-3n c1-56 c1-21 c1-57 c1-1l c1-84 c1-7y c1-i c1-j c1-85 c1-86 c1-3o c1-87 c1-58 c1-88 c1-m c1-89 c1-8a c1-n c1-o c1-p x-d-ux">
                                                     <div style="background-image: url(../../assets/groomandbride.jpg);" id="guacBg3884" role="img" data-guac-image="loading" data-ux="ContentCard" overlay="accent" link="[object Object]" treatmentData="[object Object]" class="x-el x-el-div x-el c1-1 c1-2 c1-t c1-1l c1-22 c1-1m c1-29 c1-7x c1-4 c1-8b c1-8c c1-8d c1-4h c1-8e c1-g c1-h c1-8f c1-8g c1-8h c1-8i c1-8j c1-8k c1-1n c1-i c1-j c1-7z c1-80 c1-m c1-8l c1-8m c1-8n c1-8o c1-8p c1-n c1-o c1-p x-d-aid x-d-field-id x-d-field-route x-d-ux c1-1 c1-2 c1-8q c1-8r c1-8s c1-8t c1-8u c1-8v c1-8w c1-i c1-j c1-m c1-n c1-o c1-p x-d-guac-image x-d-ux x-d-aid x-d-field-id x-d-field-route">
                                                         <div data-ux="Block" style="background-size: auto!important;" class="x-el x-el-div c1-1 c1-2 c1-4 c1-t c1-8x c1-i c1-j c1-m c1-n c1-o c1-p x-d-ux">
-                                                            <h4 typography="HeadingDelta" data-ux="ContentOverlayCardHeading" data-aid="ABOUT_HEADLINE_RENDERED0" data-field-id="cards.headline" data-field-route="/card/0" class="x-el x-el-h4 c1-2t c1-2u c1-2h c1-2i c1-68 c1-1h c1-1i c1-1r c1-1s c1-67 c1-6s c1-i c1-8y c1-j c1-33 c1-8z c1-m c1-n c1-o c1-p x-d-ux x-d-aid x-d-field-id x-d-field-route">Grab interest</h4>
-                                                            <h4 typography="HeadingDelta" data-ux="ContentOverlayCardHeading" class="x-el x-el-h4 c1-2t c1-2u c1-2h c1-2i c1-68 c1-1h c1-1i c1-1r c1-3v c1-6f c1-3z c1-67 c1-6s c1-i c1-8y c1-j c1-33 c1-m c1-6q c1-n c1-o c1-p x-d-ux">Generate excitement</h4>
-                                                            <h4 typography="HeadingDelta" data-ux="ContentOverlayCardHeading" class="x-el x-el-h4 c1-2t c1-2u c1-2h c1-2i c1-68 c1-1h c1-1i c1-1r c1-3v c1-6f c1-3z c1-67 c1-6s c1-i c1-8y c1-j c1-33 c1-90 c1-m c1-n c1-o c1-p x-d-ux">Generate excitement</h4>
+                                                            <h4 typography="HeadingDelta" data-ux="ContentOverlayCardHeading" data-aid="ABOUT_HEADLINE_RENDERED0" data-field-id="cards.headline" data-field-route="/card/0" class="x-el x-el-h4 c1-2t c1-2u c1-2h c1-2i c1-68 c1-1h c1-1i c1-1r c1-1s c1-67 c1-6s c1-i c1-8y c1-j c1-33 c1-8z c1-m c1-n c1-o c1-p x-d-ux x-d-aid x-d-field-id x-d-field-route">Discover</h4>
+                                                            <h4 typography="HeadingDelta" data-ux="ContentOverlayCardHeading" class="x-el x-el-h4 c1-2t c1-2u c1-2h c1-2i c1-68 c1-1h c1-1i c1-1r c1-3v c1-6f c1-3z c1-67 c1-6s c1-i c1-8y c1-j c1-33 c1-m c1-6q c1-n c1-o c1-p x-d-ux">Watch</h4>
+                                                            <h4 typography="HeadingDelta" data-ux="ContentOverlayCardHeading" class="x-el x-el-h4 c1-2t c1-2u c1-2h c1-2i c1-68 c1-1h c1-1i c1-1r c1-3v c1-6f c1-3z c1-67 c1-6s c1-i c1-8y c1-j c1-33 c1-90 c1-m c1-n c1-o c1-p x-d-ux">Watch</h4>
                                                         </div>
                                                         <div typography="BodyBeta" data-ux="ContentOverlayCardText" data-aid="ABOUT_DESCRIPTION_RENDERED0" data-field-id="cards.description" data-field-route="/card/0" class="x-el x-el-p c1-1 c1-2 c1-2h c1-2i c1-68 c1-1r c1-1s c1-1n c1-91 c1-i c1-8y c1-92 c1-7s c1-93 c1-94 c1-95 c1-96 x-d-ux x-d-aid x-d-field-id x-d-field-route x-rt">
-                                                            <p style="margin:0"><span>Say something interesting about your business here.</span></p>
+                                                            <p style="margin:0"><span>Find new venues everyday with BlueVen.</span></p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -202,12 +205,12 @@
                                                     <div style="background-image: url(../../assets/conference.jpg);" id="guacBg3885" role="img" data-guac-image="loading" data-ux="ContentCard" overlay="accent" link="[object Object]" data-aid="ABOUT_IMAGE_RENDERED1" data-field-id="cards" data-field-route="/card/1"
                                                         index="1" treatmentData="[object Object]" class="x-el x-el-div x-el c1-1 c1-2 c1-t c1-1l c1-22 c1-1m c1-29 c1-7x c1-4 c1-8b c1-8c c1-8d c1-4h c1-8e c1-g c1-h c1-8f c1-8g c1-8h c1-8i c1-8j c1-8k c1-1n c1-i c1-j c1-7z c1-80 c1-m c1-8l c1-8m c1-8n c1-8o c1-8p c1-n c1-o c1-p x-d-aid x-d-field-id x-d-field-route x-d-ux c1-1 c1-2 c1-8q c1-8r c1-8s c1-8t c1-8u c1-8v c1-9b c1-i c1-j c1-m c1-n c1-o c1-p x-d-guac-image x-d-ux x-d-aid x-d-field-id x-d-field-route">
                                                         <div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-4 c1-t c1-8x c1-i c1-j c1-m c1-n c1-o c1-p x-d-ux">
-                                                            <h4 typography="HeadingDelta" data-ux="ContentOverlayCardHeading" data-aid="ABOUT_HEADLINE_RENDERED1" data-field-id="cards.headline" data-field-route="/card/1" class="x-el x-el-h4 c1-2t c1-2u c1-2h c1-2i c1-68 c1-1h c1-1i c1-1r c1-1s c1-67 c1-6s c1-i c1-8y c1-j c1-33 c1-8z c1-m c1-n c1-o c1-p x-d-ux x-d-aid x-d-field-id x-d-field-route">Generate excitement</h4>
-                                                            <h4 typography="HeadingDelta" data-ux="ContentOverlayCardHeading" class="x-el x-el-h4 c1-2t c1-2u c1-2h c1-2i c1-68 c1-1h c1-1i c1-1r c1-3v c1-6f c1-3z c1-67 c1-6s c1-i c1-8y c1-j c1-33 c1-m c1-6q c1-n c1-o c1-p x-d-ux">Generate excitement</h4>
-                                                            <h4 typography="HeadingDelta" data-ux="ContentOverlayCardHeading" class="x-el x-el-h4 c1-2t c1-2u c1-2h c1-2i c1-68 c1-1h c1-1i c1-1r c1-3v c1-6f c1-3z c1-67 c1-6s c1-i c1-8y c1-j c1-33 c1-90 c1-m c1-n c1-o c1-p x-d-ux">Generate excitement</h4>
+                                                            <h4 typography="HeadingDelta" data-ux="ContentOverlayCardHeading" data-aid="ABOUT_HEADLINE_RENDERED1" data-field-id="cards.headline" data-field-route="/card/1" class="x-el x-el-h4 c1-2t c1-2u c1-2h c1-2i c1-68 c1-1h c1-1i c1-1r c1-1s c1-67 c1-6s c1-i c1-8y c1-j c1-33 c1-8z c1-m c1-n c1-o c1-p x-d-ux x-d-aid x-d-field-id x-d-field-route">Watch</h4>
+                                                            <h4 typography="HeadingDelta" data-ux="ContentOverlayCardHeading" class="x-el x-el-h4 c1-2t c1-2u c1-2h c1-2i c1-68 c1-1h c1-1i c1-1r c1-3v c1-6f c1-3z c1-67 c1-6s c1-i c1-8y c1-j c1-33 c1-m c1-6q c1-n c1-o c1-p x-d-ux">Watch</h4>
+                                                            <h4 typography="HeadingDelta" data-ux="ContentOverlayCardHeading" class="x-el x-el-h4 c1-2t c1-2u c1-2h c1-2i c1-68 c1-1h c1-1i c1-1r c1-3v c1-6f c1-3z c1-67 c1-6s c1-i c1-8y c1-j c1-33 c1-90 c1-m c1-n c1-o c1-p x-d-ux">Watch</h4>
                                                         </div>
                                                         <div typography="BodyBeta" data-ux="ContentOverlayCardText" data-aid="ABOUT_DESCRIPTION_RENDERED1" data-field-id="cards.description" data-field-route="/card/1" class="x-el x-el-p c1-1 c1-2 c1-2h c1-2i c1-68 c1-1r c1-1s c1-1n c1-91 c1-i c1-8y c1-92 c1-7s c1-93 c1-94 c1-95 c1-96 x-d-ux x-d-aid x-d-field-id x-d-field-route x-rt">
-                                                            <p style="margin:0"><span>What's something exciting your business offers? Say it here.</span></p>
+                                                            <p style="margin:0"><span>Be notified as soon as your desired venue is free.</span></p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -215,12 +218,12 @@
                                                     <div style="background-image: url(../../assets/birthday.jpg);" id="guacBg3886" role="img" data-guac-image="loading" data-ux="ContentCard" overlay="accent" link="[object Object]" data-aid="ABOUT_IMAGE_RENDERED2" data-field-id="cards" data-field-route="/card/2"
                                                         index="2" treatmentData="[object Object]" class="x-el x-el-div x-el c1-1 c1-2 c1-t c1-1l c1-22 c1-1m c1-29 c1-7x c1-4 c1-8b c1-8c c1-8d c1-4h c1-8e c1-g c1-h c1-8f c1-8g c1-8h c1-8i c1-8j c1-8k c1-1n c1-i c1-j c1-7z c1-80 c1-m c1-8l c1-8m c1-8n c1-8o c1-8p c1-n c1-o c1-p x-d-aid x-d-field-id x-d-field-route x-d-ux c1-1 c1-2 c1-8q c1-8r c1-8s c1-8t c1-8u c1-8v c1-9c c1-i c1-j c1-m c1-n c1-o c1-p x-d-guac-image x-d-ux x-d-aid x-d-field-id x-d-field-route">
                                                         <div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-4 c1-t c1-8x c1-i c1-j c1-m c1-n c1-o c1-p x-d-ux">
-                                                            <h4 typography="HeadingDelta" data-ux="ContentOverlayCardHeading" data-aid="ABOUT_HEADLINE_RENDERED2" data-field-id="cards.headline" data-field-route="/card/2" class="x-el x-el-h4 c1-2t c1-2u c1-2h c1-2i c1-68 c1-1h c1-1i c1-1r c1-1s c1-67 c1-6s c1-i c1-8y c1-j c1-33 c1-8z c1-m c1-n c1-o c1-p x-d-ux x-d-aid x-d-field-id x-d-field-route">Close the deal</h4>
-                                                            <h4 typography="HeadingDelta" data-ux="ContentOverlayCardHeading" class="x-el x-el-h4 c1-2t c1-2u c1-2h c1-2i c1-68 c1-1h c1-1i c1-1r c1-3v c1-6f c1-3z c1-67 c1-6s c1-i c1-8y c1-j c1-33 c1-m c1-6q c1-n c1-o c1-p x-d-ux">Generate excitement</h4>
-                                                            <h4 typography="HeadingDelta" data-ux="ContentOverlayCardHeading" class="x-el x-el-h4 c1-2t c1-2u c1-2h c1-2i c1-68 c1-1h c1-1i c1-1r c1-3v c1-6f c1-3z c1-67 c1-6s c1-i c1-8y c1-j c1-33 c1-90 c1-m c1-n c1-o c1-p x-d-ux">Close the deal</h4>
+                                                            <h4 typography="HeadingDelta" data-ux="ContentOverlayCardHeading" data-aid="ABOUT_HEADLINE_RENDERED2" data-field-id="cards.headline" data-field-route="/card/2" class="x-el x-el-h4 c1-2t c1-2u c1-2h c1-2i c1-68 c1-1h c1-1i c1-1r c1-1s c1-67 c1-6s c1-i c1-8y c1-j c1-33 c1-8z c1-m c1-n c1-o c1-p x-d-ux x-d-aid x-d-field-id x-d-field-route">BOOK</h4>
+                                                            <h4 typography="HeadingDelta" data-ux="ContentOverlayCardHeading" class="x-el x-el-h4 c1-2t c1-2u c1-2h c1-2i c1-68 c1-1h c1-1i c1-1r c1-3v c1-6f c1-3z c1-67 c1-6s c1-i c1-8y c1-j c1-33 c1-m c1-6q c1-n c1-o c1-p x-d-ux">Watch</h4>
+                                                            <h4 typography="HeadingDelta" data-ux="ContentOverlayCardHeading" class="x-el x-el-h4 c1-2t c1-2u c1-2h c1-2i c1-68 c1-1h c1-1i c1-1r c1-3v c1-6f c1-3z c1-67 c1-6s c1-i c1-8y c1-j c1-33 c1-90 c1-m c1-n c1-o c1-p x-d-ux">BOOK</h4>
                                                         </div>
                                                         <div typography="BodyBeta" data-ux="ContentOverlayCardText" data-aid="ABOUT_DESCRIPTION_RENDERED2" data-field-id="cards.description" data-field-route="/card/2" class="x-el x-el-p c1-1 c1-2 c1-2h c1-2i c1-68 c1-1r c1-1s c1-1n c1-91 c1-i c1-8y c1-92 c1-7s c1-93 c1-94 c1-95 c1-96 x-d-ux x-d-aid x-d-field-id x-d-field-route x-rt">
-                                                            <p style="margin:0"><span>Give customers a reason to do business with you.</span></p>
+                                                            <p style="margin:0"><span>Complete your reservation today with BlueVen.</span></p>
                                                         </div>
 
                                                     </div>
@@ -381,7 +384,7 @@
                                                     <ul data-ux="NavFooter" class="x-el x-el-ul c1-1 c1-2 c1-cw c1-3n c1-1k c1-21 c1-1j c1-1r c1-1i c1-1s c1-1h c1-i c1-j c1-2b c1-cx c1-m c1-n c1-o c1-p x-d-ux"></ul>
                                                 </div>
                                                 <hr data-ux="HR" class="x-el x-el-hr c1-1 c1-2 c1-cg c1-8j c1-5g c1-1r c1-3v c1-cy c1-15 c1-16 c1-cz c1-i c1-j c1-m c1-n c1-o c1-p x-d-ux" />
-                                                <p typography="DetailsAlpha" data-ux="FooterDetails" data-aid="FOOTER_POWERED_BY_RENDERED" data-route="poweredBy" class="x-el x-el-p c1-1 c1-2 c1-2h c1-2i c1-9t c1-1r c1-1s c1-i c1-ct c1-6g c1-7s c1-6h c1-6i c1-6j c1-6k x-d-ux x-d-aid x-d-route"><span>something<a rel="nofollow noopener" typography="LinkAlpha" data-ux="Link" target="_blank" data-aid="FOOTER_POWERED_BY_RENDERED_LINK"  class="x-el x-el-a c1-2e c1-2f c1-2g c1-2h c1-2i c1-2j c1-2k c1-i c1-2p c1-6g c1-2q c1-2r c1-2s c1-6h c1-6i c1-6j c1-6k x-d-ux x-d-aid" data-tccl="ux2.FOOTER.footer1.Layout.Default.Link.Default.3894.click,click">something</a></span></p>
+                                                <p typography="DetailsAlpha" data-ux="FooterDetails" data-aid="FOOTER_POWERED_BY_RENDERED" data-route="poweredBy" class="x-el x-el-p c1-1 c1-2 c1-2h c1-2i c1-9t c1-1r c1-1s c1-i c1-ct c1-6g c1-7s c1-6h c1-6i c1-6j c1-6k x-d-ux x-d-aid x-d-route"><span><a rel="nofollow noopener" typography="LinkAlpha" data-ux="Link" target="_blank" data-aid="FOOTER_POWERED_BY_RENDERED_LINK"  class="x-el x-el-a c1-2e c1-2f c1-2g c1-2h c1-2i c1-2j c1-2k c1-i c1-2p c1-6g c1-2q c1-2r c1-2s c1-6h c1-6i c1-6j c1-6k x-d-ux x-d-aid" data-tccl="ux2.FOOTER.footer1.Layout.Default.Link.Default.3894.click,click"></a></span></p>
                                             </div>
                                         </div>
                                     </div>

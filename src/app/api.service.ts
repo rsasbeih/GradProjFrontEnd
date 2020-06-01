@@ -13,4 +13,7 @@ export class ApiService {
   public get(){  
     return this.httpClient.get(this.SERVER_URL);  
   }
+  public getById(id: String){
+    return this.httpClient.get(this.SERVER_URL+"/"+id);
+  }
 }

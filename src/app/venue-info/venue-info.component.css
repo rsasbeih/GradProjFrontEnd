@@ -98,3 +98,8 @@ li {
     overflow: hidden;
     color: red;
 }
+
+.mat-card-avatar {
+    height: 52px;
+    width: 61px;
+}

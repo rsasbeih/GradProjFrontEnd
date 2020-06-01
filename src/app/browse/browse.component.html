@@ -9,7 +9,9 @@
                         <mat-icon>event</mat-icon>
                     </mat-label>
                     <mat-select>
-                        <mat-option value="option">Option</mat-option>
+                        <mat-option value="option">Wedding</mat-option>
+                        <mat-option value="option">Conference</mat-option>
+                        <mat-option value="option">Party</mat-option>
                     </mat-select>
                 </mat-form-field>
                 <br>
@@ -19,7 +21,7 @@
                         <mat-icon>edit_location</mat-icon>
                     </mat-label>
                     <mat-select>
-                        <mat-option value="option">Option</mat-option>
+                        <mat-option value="option">Ramallah</mat-option>
                     </mat-select>
                 </mat-form-field>
                 <br>
@@ -27,7 +29,7 @@
                     <mat-label>Number of People
                         <mat-icon>people</mat-icon>
                     </mat-label>
-                    <input matInput>
+                    <input matInput type="number">
                 </mat-form-field>
                 <br>
                 <mat-form-field>
@@ -65,14 +67,14 @@
         <div class="flex-child-2">
             <ul>
                 <li *ngFor="let venue of venues">
-                    <mat-card class="example-card" routerLink="/venue_info">
+                    <mat-card class="example-card" routerLink="/venue_info/{{ venue.id }}">
                         <img mat-card-image src="{{ venue.imageUrl }}" alt="Photo of a Venue">
                         <mat-card-header>
                             <div mat-card-avatar>
                                 <div>${{venue.price}}</div>
                             </div>
                             <mat-card-title>{{venue.name}}</mat-card-title>
-                            <mat-card-subtitle>Venue Owner</mat-card-subtitle>
+                            <mat-card-subtitle>{{venue.businessOwner}}</mat-card-subtitle>
                         </mat-card-header>
                         <mat-card-content>
                             <p>
