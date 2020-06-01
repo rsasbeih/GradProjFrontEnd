@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, Validators} from '@angular/forms';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-reserve-venue',
@@ -8,7 +9,7 @@ import {FormControl, Validators} from '@angular/forms';
 })
 export class ReserveVenueComponent implements OnInit {
 
-  constructor() { }
+  constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
   }
@@ -19,6 +20,12 @@ export class ReserveVenueComponent implements OnInit {
   timeOfReservation  = new FormControl('', [Validators.required]);
   datePicker = new FormControl('', [Validators.required]);
   phone= new FormControl('', [Validators.required]);
+  emailValue:string;
+  firstNameValue:string;
+  lastNameValue:string;
+  numOfPeopleValue;
+  datePickerValue;
+  phoneValue;
   getErrorMessage() {
     if (this.email.hasError('required')) {
       return 'You must enter a value';
@@ -56,4 +63,26 @@ export class ReserveVenueComponent implements OnInit {
       return 'You must enter a value';
     }
   }
+  addReservation(){
+    this.apiService.post(
+      {
+        "id": '_' + Math.random().toString(36).substr(2, 9),
+        "venueId": 2,
+        "reservationDate": this.datePickerValue,
+        "customerName": this.firstNameValue+" "+this.lastNameValue,
+        "customerEmail": this.emailValue,
+        "customerPhone": this.phoneValue,
+        "noOfPeople": this.numOfPeopleValue
+    }
+    ).subscribe((data: any[])=>{  
+      {}
+		})  
+  }
 }
+// "id": Math.random().toString(36).substr(2, 9),
+//         "venueId": this.venueId,
+//         "reservationDate": this.datePicker,
+//         "customerName": this.firstName+" "+this.lastName,
+//         "customerEmail": this.email,
+//         "customerPhone": this.phone,
+//         "noOfPeople": this.numOfPeople

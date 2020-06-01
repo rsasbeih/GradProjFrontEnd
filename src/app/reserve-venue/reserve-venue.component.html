@@ -27,40 +27,40 @@
             <div class="example-container">
                 <mat-form-field appearance="fill">
                     <mat-label>First Name</mat-label>
-                    <input matInput placeholder="First Name" [formControl]="firstName" required>
+                    <input matInput placeholder="First Name" [formControl]="firstName" required [(ngModel)]="firstNameValue">
                     <mat-error *ngIf="firstName.invalid">{{getFirstNameErrorMessage()}}</mat-error>
                 </mat-form-field>
             </div>
             <div class="example-container">
                 <mat-form-field appearance="fill">
                     <mat-label>Last Name</mat-label>
-                    <input matInput placeholder="Last Name" [formControl]="lastName" required>
+                    <input matInput placeholder="Last Name" [formControl]="lastName" required [(ngModel)]="lastNameValue">
                     <mat-error *ngIf="lastName.invalid">{{getLastNameErrorMessage()}}</mat-error>
                 </mat-form-field>
             </div>
             <div class="example-container">
                 <mat-form-field appearance="fill">
                     <mat-label>Email</mat-label>
-                    <input matInput placeholder="pat@example.com" [formControl]="email" required>
+                    <input matInput placeholder="pat@example.com" [formControl]="email" required [(ngModel)]="emailValue">
                     <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
                 </mat-form-field>
             </div>
             <div class="example-container">
                 <mat-form-field appearance="fill">
                     <mat-label>Telephone</mat-label>
-                    <input type="tel" matInput placeholder="555-555-1234" [formControl]="phone" required>
+                    <input type="tel" matInput placeholder="555-555-1234" [formControl]="phone" required [(ngModel)]="phoneValue">
                     <mat-error *ngIf="numOfPeople.invalid">{{getPhoneMessage()}}</mat-error>
                 </mat-form-field>
             </div>
             <div class="example-container">
                 <mat-form-field appearance="fill">
                     <mat-label>Number of People</mat-label>
-                    <input type="number" matInput placeholder="Number of People" [formControl]="numOfPeople" required>
+                    <input type="number" matInput placeholder="Number of People" [formControl]="numOfPeople" required [(ngModel)]="numOfPeopleValue">
                     <mat-error *ngIf="numOfPeople.invalid">{{getNumOfPeopleMessage()}}</mat-error>
                 </mat-form-field>
             </div>
             <div class="example-button-row">
-                <button mat-raised-button color="primary" routerLink="/reserve_venue">RESERVE NOW</button>
+                <button mat-raised-button color="primary" routerLink="/reserve_venue" (click)="addReservation()">RESERVE NOW</button>
             </div>
 
         </form>
