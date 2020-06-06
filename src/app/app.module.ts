@@ -34,6 +34,8 @@ import { BOProfileComponent } from './boprofile/boprofile.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { LoginDialogComponent } from './login-dialog/login-dialog.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
+import { ManageVenuesComponent } from './manage-venues/manage-venues.component';
+import { AddVenueComponent } from './add-venue/add-venue.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,7 +54,9 @@ import { ThankYouComponent } from './thank-you/thank-you.component';
     ReserveVenueComponent,
     BOProfileComponent,
     LoginDialogComponent,
-    ThankYouComponent
+    ThankYouComponent,
+    ManageVenuesComponent,
+    AddVenueComponent
   ],
   imports: [
     BrowserModule,

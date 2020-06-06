@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import {CurrentUserService} from '../current-user.service';
 import { ApiService } from '../api.service';
 @Component({
-  selector: 'app-watchlist',
-  templateUrl: './watchlist.component.html',
-  styleUrls: ['./watchlist.component.css']
+  selector: 'app-manage-venues',
+  templateUrl: './manage-venues.component.html',
+  styleUrls: ['./manage-venues.component.css']
 })
-export class WatchlistComponent implements OnInit {
+export class ManageVenuesComponent implements OnInit {
+
   currentUser:any=null;
   venues=[];
   reservations=[];

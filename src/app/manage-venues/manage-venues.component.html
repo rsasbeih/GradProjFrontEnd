@@ -1,0 +1,55 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div class="background">
+    <h1>Manage Venues</h1>
+    <div style="background-color: #D3D3D3;margin-right:71px;margin-left:71px;margin-top:1em;padding: 3em;border-radius: 5px;">
+        <h2 style="font-size: 65px;display: inline;">Add New Venue</h2>
+        <mat-icon style="font-size: 80px;float: right;padding-right: 1em;" class="icon">control_point</mat-icon>
+    </div>
+    <div class="flex-child-2">
+        <ul>
+            <li *ngFor="let venue of venues; let i = index;" style="display: flex;">
+                <!-- <div *ngIf="venue.customerId==this.currentUser.id"> -->
+                <mat-card style="display: inline-block;flex: auto;margin: 20px;" class="example-card" routerLink="/venue_info/{{ venue.id }}">
+                    <img mat-card-image src="{{ venue.imageUrl[0] }}" alt="Photo of a Venue">
+                    <mat-card-header>
+                        <div mat-card-avatar>
+                            <div>${{venue.price}}</div>
+                        </div>
+                        <mat-card-title>{{venue.name}}</mat-card-title>
+                        <mat-card-subtitle>{{venue.businessOwner}}</mat-card-subtitle>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <p>
+                            {{venue.description}}
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions align="end">
+                        <button mat-raised-button style="background-color: #af4e4c;color:white">DELETE</button>
+                        <button mat-raised-button color="primary">UPDATE</button>
+                    </mat-card-actions>
+                </mat-card>
+
+                <mat-card style="display: inline-block;flex: auto;margin: 20px;" class="example-card" routerLink="/venue_info/{{ venue.id }}">
+                    <img mat-card-image src="{{ venue.imageUrl[0] }}" alt="Photo of a Venue">
+                    <mat-card-header>
+                        <div mat-card-avatar>
+                            <div>${{venue.price}}</div>
+                        </div>
+                        <mat-card-title>{{venue.name}}</mat-card-title>
+                        <mat-card-subtitle>{{venue.businessOwner}}</mat-card-subtitle>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <p>
+                            {{venue.description}}
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions align="end">
+                        <button mat-raised-button style="background-color: #af4e4c;color:white">DELETE</button>
+                        <button mat-raised-button color="primary">UPDATE</button>
+                    </mat-card-actions>
+                </mat-card>
+                <!-- </div> -->
+            </li>
+        </ul>
+    </div>
+</div>

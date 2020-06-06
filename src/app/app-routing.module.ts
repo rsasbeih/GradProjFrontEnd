@@ -12,6 +12,7 @@ import { VenueInfoComponent } from './venue-info/venue-info.component';
 import { ReserveVenueComponent } from './reserve-venue/reserve-venue.component';
 import { BOProfileComponent } from './boprofile/boprofile.component';
 import {ThankYouComponent} from './thank-you/thank-you.component';
+import { ManageVenuesComponent } from './manage-venues/manage-venues.component';
 
 
 const routes: Routes = [
@@ -27,7 +28,8 @@ const routes: Routes = [
   {path: 'venue_info/:id',component: VenueInfoComponent},
   {path: 'reserve_venue',component: ReserveVenueComponent},
   {path: 'boprofile',component: BOProfileComponent},
-  {path: 'thank_you',component: ThankYouComponent}
+  {path: 'thank_you',component: ThankYouComponent},
+  {path: 'manage_venues',component: ManageVenuesComponent}
 ];
 
 @NgModule({

@@ -28,6 +28,7 @@ export class ReservationsComponent implements OnInit {
       this.reservations = data;  
     })
     
+    
   }
 
 }

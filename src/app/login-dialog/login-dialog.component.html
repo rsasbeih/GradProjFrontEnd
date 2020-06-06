@@ -5,6 +5,7 @@
         <input type="text" placeholder="Email Address" [(ngModel)]="email" name="email" />
         <button (click)="register() ">create</button>
         <p class="message ">Already registered? <a (click)="showLogin() ">Sign In</a></p>
+        <p class="message ">Business Owner? <a (click)="showRegister() ">Sign Up Here</a></p>
     </form>
     <form *ngIf="loginFormActive" class="login-form ">
         <input type="text" placeholder="Username" [(ngModel)]="username" name="username" />
@@ -12,5 +13,6 @@
         <div *ngIf="notAUser" class="error_message" style="color:red; ">Invalid Credentials</div>
         <button (click)="checkLogin() ">login</button>
         <p class="message ">Not registered? <a (click)="showRegister() ">Create an account</a></p>
+        <p class="message ">Business Owner? <a (click)="showRegister() ">Sign Up Here</a></p>
     </form>
 </div>
