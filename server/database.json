@@ -125,6 +125,81 @@
       "customerEmail": "r@r.com",
       "customerPhone": "222-2222",
       "noOfPeople": 99
+    },
+    {
+      "id": "_5llmc1bcl",
+      "venueId": 2,
+      "customerName": "Yusuf Sbeih",
+      "customerEmail": "haruhisbeih@gmail.com",
+      "customerPhone": "0523333333",
+      "noOfPeople": 56,
+      "customerId": 3
+    },
+    {
+      "id": "_bb7e3aeya",
+      "venueId": 2,
+      "customerName": "Ziyad Sbeih",
+      "customerEmail": "z@z.com",
+      "customerPhone": "0529999999",
+      "noOfPeople": 45,
+      "customerId": "_l0dlejjc3"
+    },
+    {
+      "id": "_gsuwz2esy",
+      "venueId": 2,
+      "customerName": "Ruba Sbeih",
+      "customerEmail": "r@r.com",
+      "customerPhone": "0523333333",
+      "noOfPeople": 78,
+      "customerId": 1
+    },
+    {
+      "id": "_gcv3bdtzq",
+      "customerName": "Yusuf Sbeih",
+      "customerEmail": "haruhisbeih@gmail.com",
+      "customerPhone": "0545555555",
+      "noOfPeople": 55,
+      "customerId": 3
+    },
+    {
+      "id": "_3tx8gcgap",
+      "venueId": "4",
+      "customerName": "Ziyad Sbeih",
+      "customerEmail": "z@z.com",
+      "customerPhone": "0524444444",
+      "noOfPeople": 67,
+      "customerId": "_l0dlejjc3"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "fname": "Ruba",
+      "lname": "Sbeih",
+      "email": "rsasbeih@gmail.com",
+      "mobileNum": "0523333333",
+      "username": "ruba123",
+      "password": "ruba123"
+    },
+    {
+      "id": 2,
+      "email": "olivier@mail.com",
+      "password": "bestPassw0rd"
+    },
+    {
+      "id": 3,
+      "fname": "Yusuf",
+      "lname": "Sbeih",
+      "email": "rsasbeih@gmail.com",
+      "mobileNum": "0523333333",
+      "username": "yusuf123",
+      "password": "yusuf123"
+    },
+    {
+      "id": "_l0dlejjc3",
+      "username": "ziyad123",
+      "password": "ziyad123",
+      "email": "z@z.com"
     }
   ]
 }

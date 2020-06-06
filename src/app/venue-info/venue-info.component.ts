@@ -3,6 +3,10 @@ import {NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
 import {NgbDateStruct, NgbCalendar} from '@ng-bootstrap/ng-bootstrap';
 import {ActivatedRoute} from "@angular/router";
 import { ApiService } from '../api.service';
+import {CurrentUserService} from '../current-user.service';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import {Router} from '@angular/router';
+import { LoginDialogComponent } from '../login-dialog/login-dialog.component';
 
 @Component({
   selector: 'app-venue-info',
@@ -22,13 +26,16 @@ export class VenueInfoComponent implements OnInit {
   model: NgbDateStruct;
   date: {year: number, month: number};
   currentVenue:string;
-  constructor(config: NgbCarouselConfig,private calendar: NgbCalendar, private route: ActivatedRoute,private apiService: ApiService) {
+  currentVenueObj:any;
+  currentUser:any=null;
+  constructor(config: NgbCarouselConfig,private calendar: NgbCalendar, private route: ActivatedRoute,private apiService: ApiService,private currentUserService:CurrentUserService,public dialog: MatDialog,private router: Router) {
     window.scroll(0,0);
     config.showNavigationArrows = true;
     config.showNavigationIndicators = true;
     this.route.params.subscribe( params => {
       console.log(params);
-    this.currentVenue=params.id; });
+    this.currentVenue=params.id;
+  this.currentVenueObj=params; });
     //this.currentVenue= this.route.params.i;
    }
 
@@ -40,11 +47,35 @@ export class VenueInfoComponent implements OnInit {
       this.venueOwner=data.businessOwner;
       this.venueDescp=data.description;
       this.venueImg=data.imageUrl;
-		})  
+    })  
+    this.currentUserService.currentMessage.subscribe(message => this.currentUser = message)
 	}
   selectToday() {
     this.model = this.calendar.getToday();
   }
+  goToReservePage(){
+    if(this.currentUser==null){
+      this.openDialog();
+    }
+    else{
+    this.currentUserService.changeVenue(this.currentVenueObj);
+    this.router.navigateByUrl('/reserve_venue');
+  }
+  }
+  openDialog(): void {
+
+    const dialogRef = this.dialog.open(LoginDialogComponent, {
+      // data: {name: this.currentUser.username}
+    });
+    dialogRef.afterClosed().subscribe(result => {
+      if(result){
+      console.log(result);
+   //   this.name="Hello, "+result;
+     // console.log(this.user);
+  //   this.isLoggedIn=true;
+    }
+    });
+}
  
 
 }

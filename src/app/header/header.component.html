@@ -2,7 +2,7 @@
     <span> 
         <img routerLink="/" class="logo" src="../../assets/logo.png"/>
         </span>
-    <div class="space" ></div>
+    <div class="space"></div>
     <a mat-button routerLink="/about_us">About Us</a>
     <a mat-button routerLink="/browse">Browse Venues</a>
     <a mat-button routerLink="/contact_us">Contact Us</a>
@@ -10,13 +10,18 @@
     <!--
     <a mat-button routerLink="/profile">Icons</a>
     -->
+
     <a mat-button>
         <mat-icon class="icon">language</mat-icon>
     </a>
     <a mat-button>
         <mat-icon class="icon">shopping_cart</mat-icon>
     </a>
-    <a mat-button routerLink="/boprofile" style="color: black;">
-        <mat-icon class="icon">person</mat-icon>
-    </a>
+    <div>
+        <span *ngIf="isLoggedIn" style="font-family: 'Lato';  font-size: 16px;position: absolute;top: 0%; left: 86%;">{{name}}
+        <a style="color: red;" (click)="logout()">&nbsp;Logout</a></span>
+        <a mat-button (click)="openDialog()" style="color: black;">
+            <mat-icon class="icon">person</mat-icon>
+        </a>
+    </div>
 </mat-toolbar>

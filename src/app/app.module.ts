@@ -31,7 +31,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReserveVenueComponent } from './reserve-venue/reserve-venue.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BOProfileComponent } from './boprofile/boprofile.component';
-
+import {MatDialogModule} from '@angular/material/dialog';
+import { LoginDialogComponent } from './login-dialog/login-dialog.component';
+import { ThankYouComponent } from './thank-you/thank-you.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,7 +50,9 @@ import { BOProfileComponent } from './boprofile/boprofile.component';
     BrowseComponent,
     VenueInfoComponent,
     ReserveVenueComponent,
-    BOProfileComponent
+    BOProfileComponent,
+    LoginDialogComponent,
+    ThankYouComponent
   ],
   imports: [
     BrowserModule,
@@ -67,6 +71,7 @@ import { BOProfileComponent } from './boprofile/boprofile.component';
     MatListModule,
     MatCardModule,
     MatCheckboxModule,
+    MatDialogModule,
     BrowserAnimationsModule,
     NgbModule
   ],

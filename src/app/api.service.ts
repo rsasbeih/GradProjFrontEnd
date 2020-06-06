@@ -8,7 +8,7 @@ export class ApiService {
 
   private SERVER_VENUE_URL = "http://localhost:3000/venues";
   private SERVER_RESERVATION_URL="http://localhost:3000/reservations"
-
+  private SERVER_USER_URL="http://localhost:3000/users"
   constructor(private httpClient: HttpClient) { }
 
   public get(){  
@@ -19,5 +19,11 @@ export class ApiService {
   }
   public post(data:any){
     return this.httpClient.post(this.SERVER_RESERVATION_URL,data);
+  }
+  public login(){
+    return this.httpClient.get(this.SERVER_USER_URL);
+  }
+  public register(data:any){
+    return this.httpClient.post(this.SERVER_USER_URL,data);
   }
 }

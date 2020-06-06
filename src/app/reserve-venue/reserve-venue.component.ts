@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, Validators} from '@angular/forms';
 import { ApiService } from '../api.service';
-
+import {CurrentUserService} from '../current-user.service';
+import {Router} from '@angular/router';
 @Component({
   selector: 'app-reserve-venue',
   templateUrl: './reserve-venue.component.html',
@@ -9,9 +10,15 @@ import { ApiService } from '../api.service';
 })
 export class ReserveVenueComponent implements OnInit {
 
-  constructor(private apiService: ApiService) { }
+  currentUser:any;
+  currentVenue:any;
+  constructor(private apiService: ApiService,private currentUserService:CurrentUserService,private router: Router) { }
 
-  ngOnInit(): void {
+ ngOnInit() {
+    this.currentUserService.currentMessage.subscribe(message => this.currentUser = message);
+    this.currentUserService.currentVenue.subscribe(currentVenue => this.currentVenue = currentVenue);
+ //   console.log(this.currentUser);
+    console.log(this.currentVenue);
   }
   email = new FormControl('', [Validators.required, Validators.email]);
   firstName = new FormControl('', [Validators.required]);
@@ -67,16 +74,18 @@ export class ReserveVenueComponent implements OnInit {
     this.apiService.post(
       {
         "id": '_' + Math.random().toString(36).substr(2, 9),
-        "venueId": 2,
+        "venueId": this.currentVenue.id,
         "reservationDate": this.datePickerValue,
         "customerName": this.firstNameValue+" "+this.lastNameValue,
         "customerEmail": this.emailValue,
         "customerPhone": this.phoneValue,
-        "noOfPeople": this.numOfPeopleValue
+        "noOfPeople": this.numOfPeopleValue,
+        "customerId":this.currentUser.id
     }
     ).subscribe((data: any[])=>{  
       {}
-		})  
+    })
+    this.router.navigateByUrl('/thank_you');  
   }
 }
 // "id": Math.random().toString(36).substr(2, 9),
