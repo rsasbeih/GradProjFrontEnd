@@ -2,66 +2,66 @@
   "venues": [
     {
       "id": 1,
-      "businessOwner": "Augusta Parisian",
-      "name": "Stehr - Kautzer",
+      "businessOwner": "mohammed ",
+      "name": "Qalat Al-Sham Venue",
       "type": "Wedding",
-      "description": "Dolore enim maxime amet dolorum nihil aperiam id. Placeat inventore qui est et ut. Magnam vitae aut possimus nisi ducimus repellendus. Sit molestiae qui quia nesciunt voluptas autem perspiciatis ut.",
-      "price": "714.00",
-      "imageUrl": "https://images.unsplash.com/photo-1521727284875-14f6b020d1d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+      "description": "nothing",
+      "price": "714.00 $",
+      "imageUrl": "qalat alsham.jpg"
     },
     {
       "id": 2,
-      "businessOwner": "Alisha Larson",
-      "name": "Considine Group",
+      "businessOwner": "Ahmed",
+      "name": " Red Rose Venues ",
       "type": "Party",
-      "description": "Eligendi nesciunt eligendi cupiditate veniam odio repellendus. Autem quis ullam. Iusto ipsum laborum exercitationem soluta consequuntur praesentium minima excepturi. Ex fuga perferendis molestias ut. Libero doloremque consectetur eos incidunt qui pariatur provident error odio. Veniam quos non impedit.",
-      "price": "75.00",
-      "imageUrl": "https://images.unsplash.com/photo-1575672909049-30fa299df67e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+      "description": "nothing",
+      "price": "500.00$",
+      "imageUrl": "red rose.jpg"
     },
     {
       "id": 3,
-      "businessOwner": "Fae Schmitt",
-      "name": "Borer - Reynolds",
-      "type": "Conference",
-      "description": "Impedit dolor iure a possimus officiis ullam ullam. Ut velit animi perferendis ut quae deleniti esse ut.",
-      "price": "528.00",
-      "imageUrl": "https://images.unsplash.com/photo-1525476325627-1380280dcfab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1241&q=80"
+      "businessOwner": "Zaid ",
+      "name": "Birzeit Grand Venue ",
+      "type": "Party",
+      "description": "nothing",
+      "price": "528.00$",
+      "imageUrl": "grand venue.jpg"
     },
     {
       "id": 4,
-      "businessOwner": "Oliver Schulist",
-      "name": "Gusikowski - Hagenes",
-      "type": "Party",
-      "description": "Vero hic dolor dolor aut laboriosam doloremque est consectetur. Ut quibusdam quia tenetur qui quo voluptates voluptas iusto. Molestias aut alias. Dolorem ducimus quis. Eos quod qui aliquam omnis possimus in.",
-      "price": "534.00",
-      "imageUrl": "https://images.unsplash.com/photo-1518079893270-6222a4393c6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80"
+      "businessOwner": "Birzeit University",
+      "name": "Kamal AbdulNaser Hall",
+      "type": "Conference ",
+      "description": "nothing",
+      "price": "534.00 $",
+      "imageUrl": "kamalnaser.jpg"
     },
     {
       "id": 5,
-      "businessOwner": "Elijah Turner",
-      "name": "Hoeger - Feil",
-      "type": "Conference",
-      "description": "Nostrum tenetur sunt est dolorem in. Eos non quia optio et officia eius autem et nihil.",
-      "price": "946.00",
-      "imageUrl": "https://images.unsplash.com/photo-1526041092449-209d556f7a32?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80"
+      "businessOwner": "Awwad",
+      "name": "Al-Shoroq Venue",
+      "type": "Wedding",
+      "description": "nothing",
+      "price": "946.00$",
+      "imageUrl": "shoroq.jpg"
     },
     {
       "id": 6,
-      "businessOwner": "Mariane Pfannerstill",
-      "name": "Rice, Krajcik and Hane",
+      "businessOwner": "Abedullah AlHamad ",
+      "name": "Salfit Big Venues",
       "type": "Wedding",
-      "description": "Nesciunt enim nesciunt est. Eaque eaque quos in voluptates quod veritatis. Et deleniti et ad quod est inventore optio et ut. Et excepturi nihil et aut aliquam aut cupiditate. Sequi sed voluptatibus sequi atque. Magni vero quis architecto.",
-      "price": "170.00",
-      "imageUrl": "https://images.unsplash.com/photo-1529636600939-9edeb1f9719f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+      "description": "nothing",
+      "price": "370.00$",
+      "imageUrl": "salfit.jpg"
     },
     {
       "id": 7,
-      "businessOwner": "Amy Douglas",
-      "name": "Ortiz, Armstrong and Hackett",
-      "type": "Conference",
-      "description": "Nulla perspiciatis quidem omnis. Quia ullam eos quae eius corrupti. Velit non eos velit illum. Occaecati nostrum nihil optio officia consequuntur. Quod earum est expedita ut explicabo sed dolor. Officiis quos quos magni nihil minus quo nostrum est.",
-      "price": "359.00",
-      "imageUrl": "https://images.unsplash.com/photo-1565116085820-0b370d03f445?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=1600"
+      "businessOwner": "Abu Alghoor ",
+      "name": "Flora Gardens",
+      "type": "Party",
+      "description": "nothing",
+      "price": "359.00$",
+      "imageUrl": "floragardens.jpg"
     },
     {
       "id": 8,
