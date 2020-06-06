@@ -8,9 +8,71 @@ h1 {
     font-size: 4em;
     background-color: #321e65;
     color: white;
+    /* text-align: center; */
     font-weight: normal;
 }
 
 .background {
-    height: 40em;
+    height: auto;
+}
+
+.example-card {
+    max-width: 100%;
+}
+
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
+
+.child {
+    width: 36em;
+    /* border: 1px solid black; */
+    height: 10px;
+    top: 0;
+    position: sticky;
+}
+
+.flex-child-2 {
+    flex: 1;
+}
+
+.container2 {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 1em;
+}
+
+.mat-form-field {
+    width: 100%;
+    text-align: center;
+}
+
+.mat-card-avatar {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 52px;
+    width: 61px;
+}
+
+.space {
+    flex: 1;
+}
+
+.mat-checkbox {
+    font-size: 1.5em;
+}
+
+li {
+    padding-left: 20em;
+    padding-right: 20em;
 }

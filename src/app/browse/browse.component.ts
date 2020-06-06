@@ -18,6 +18,7 @@ export class BrowseComponent implements OnInit {
   currentUser="user0";
   constructor(private apiService: ApiService,private data: CurrentUserService) { }
 	ngOnInit() {
+    window.scroll(0,0);
 		this.apiService.get().subscribe((data: any[])=>{  
 			console.log(data);  
       this.venues = data;  

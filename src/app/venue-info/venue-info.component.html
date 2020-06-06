@@ -3,13 +3,13 @@
     <h1>{{venueName}}</h1>
     <div class="parent">
         <div class="child">
-            <mat-card class="example-card" routerLink="/venue_info">
+            <mat-card class="example-card">
                 <ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
-                    <ng-template ngbSlide *ngFor="let image of images">
+                    <ng-template ngbSlide *ngFor="let image of venueImg">
                         <div class="picsum-img-wrapper">
                             <!-- <img [src]="image" alt="Random slide" style="height: auto;
                             width: 38em;"> -->
-                            <img src="{{venueImg}}" alt="Random slide" style="height: auto;
+                            <img src="{{image}}" alt="Random slide" style="height: auto;
                              width: 38em;">
                         </div>
                         <div class="carousel-caption">

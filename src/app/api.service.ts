@@ -20,6 +20,9 @@ export class ApiService {
   public post(data:any){
     return this.httpClient.post(this.SERVER_RESERVATION_URL,data);
   }
+  public getReservations(){  
+    return this.httpClient.get(this.SERVER_RESERVATION_URL);
+  }
   public login(){
     return this.httpClient.get(this.SERVER_USER_URL);
   }

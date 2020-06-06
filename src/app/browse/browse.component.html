@@ -67,7 +67,7 @@
             <ul>
                 <li *ngFor="let venue of venues">
                     <mat-card class="example-card" routerLink="/venue_info/{{ venue.id }}">
-                        <img mat-card-image src="{{ venue.imageUrl }}" alt="Photo of a Venue">
+                        <img mat-card-image src="{{ venue.imageUrl[0] }}" alt="Photo of a Venue">
                         <mat-card-header>
                             <div mat-card-avatar>
                                 <div>${{venue.price}}</div>

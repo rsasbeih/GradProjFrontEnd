@@ -1,3 +1,30 @@
 <div class="background">
     <h1>Your Reservations</h1>
+    <div class="flex-child-2">
+        <ul>
+            <li *ngFor="let venue of venues">
+                <!-- <div *ngIf="venue.customerId==this.currentUser.id"> -->
+                <mat-card class="example-card" routerLink="/venue_info/{{ venue.id }}">
+                    <img mat-card-image src="{{ venue.imageUrl[0] }}" alt="Photo of a Venue">
+                    <mat-card-header>
+                        <div mat-card-avatar>
+                            <div>${{venue.price}}</div>
+                        </div>
+                        <mat-card-title>{{venue.name}}</mat-card-title>
+                        <mat-card-subtitle>{{venue.businessOwner}}</mat-card-subtitle>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <p>
+                            {{venue.description}}
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions align="end">
+                        <button mat-raised-button style="background-color: #af4e4c;color:white">CANCEL</button>
+                        <button mat-raised-button color="primary">BOOK AGAIN</button>
+                    </mat-card-actions>
+                </mat-card>
+                <!-- </div> -->
+            </li>
+        </ul>
+    </div>
 </div>
