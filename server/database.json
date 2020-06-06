@@ -5,63 +5,77 @@
       "businessOwner": "mohammed ",
       "name": "Qalat Al-Sham Venue",
       "type": "Wedding",
-      "description": "nothing",
+      "description": "Qaat A Sham Venue Vero quidem adipisci non maxime illo soluta ex. Nihil soluta quibusdam molestias magni rerum praesentium similique ut sit. Distinctio reprehenderit molestias et doloremque eius quo. Non reiciendis sapiente hic. ",
       "price": "714.00 $",
-      "imageUrl": "qalat alsham.jpg"
+      "imageUrl": "../assests/qalat alsham.jpg",
+      "imageUrl2": "../assests/sham2.jpg",
+      "imageUrl3": "../assests/sham3.jpg"
     },
     {
       "id": 2,
       "businessOwner": "Ahmed",
       "name": " Red Rose Venues ",
       "type": "Party",
-      "description": "nothing",
+      "description": "Red Rose Venues Vero quidem adipisci non maxime illo soluta ex. Nihil soluta quibusdam molestias magni rerum praesentium similique ut sit. Distinctio reprehenderit molestias et doloremque eius quo. Non reiciendis sapiente hic.",
       "price": "500.00$",
-      "imageUrl": "red rose.jpg"
+      "imageUrl": "../assests/red rose.jpg",
+      "imageUrl2": "../assests/red2.jpg",
+      "imageUr3": "../assests/red3.jpg"
     },
     {
       "id": 3,
       "businessOwner": "Zaid ",
       "name": "Birzeit Grand Venue ",
       "type": "Party",
-      "description": "nothing",
+      "description": "Birzeit Grand Venue Vero quidem adipisci non maxime illo soluta ex. Nihil soluta quibusdam molestias magni rerum praesentium similique ut sit. Distinctio reprehenderit molestias et doloremque eius quo. Non reiciendis sapiente hic.",
       "price": "528.00$",
-      "imageUrl": "grand venue.jpg"
+      "imageUrl": "../assests/grand venue.jpg",
+      "imageUrl2": "../assests/grand2.jpg",
+      "imageUrl3": "../assests/grand3.jpg"
     },
     {
       "id": 4,
       "businessOwner": "Birzeit University",
       "name": "Kamal AbdulNaser Hall",
       "type": "Conference ",
-      "description": "nothing",
+      "description": "Kamal AbdulNaser Hall Vero quidem adipisci non maxime illo soluta ex. Nihil soluta quibusdam molestias magni rerum praesentium similique ut sit. Distinctio reprehenderit molestias et doloremque eius quo. Non reiciendis sapiente hic.",
       "price": "534.00 $",
-      "imageUrl": "kamalnaser.jpg"
+      "imageUrl": "../assests/kamalnaser.jpg",
+      "imageUrl2": "../assests/kamal2.jpg",
+      "imageUrl3": "../assests/kamal3.jpg"
     },
     {
       "id": 5,
       "businessOwner": "Awwad",
       "name": "Al-Shoroq Venue",
       "type": "Wedding",
-      "description": "nothing",
+      "description": "Al-Shoroq Venue Vero quidem adipisci non maxime illo soluta ex. Nihil soluta quibusdam molestias magni rerum praesentium similique ut sit. Distinctio reprehenderit molestias et doloremque eius quo. Non reiciendis sapiente hic.",
       "price": "946.00$",
-      "imageUrl": "shoroq.jpg"
+      "imageUrl": "../assests/shoroq.jpg",
+      "imageUrl2": "../assests/shoroq2.jpg",
+      "imageUrl3": "../assests/shoroq3.jpg"
     },
     {
       "id": 6,
       "businessOwner": "Abedullah AlHamad ",
       "name": "Salfit Big Venues",
       "type": "Wedding",
-      "description": "nothing",
+      "description": "Slafit Big Venues Vero quidem adipisci non maxime illo soluta ex. Nihil soluta quibusdam molestias magni rerum praesentium similique ut sit. Distinctio reprehenderit molestias et doloremque eius quo. Non reiciendis sapiente hic.",
       "price": "370.00$",
-      "imageUrl": "salfit.jpg"
+      "imageUrl": "../assests/salfit.jpg",
+      "imageUrl2": "../assests/salfit2.jpg",
+      "imageUrl3": "../assests/salfit3.jpg"
     },
     {
       "id": 7,
       "businessOwner": "Abu Alghoor ",
       "name": "Flora Gardens",
       "type": "Party",
-      "description": "nothing",
+      "description": "Flora Gardens Vero quidem adipisci non maxime illo soluta ex. Nihil soluta quibusdam molestias magni rerum praesentium similique ut sit. Distinctio reprehenderit molestias et doloremque eius quo. Non reiciendis sapiente hic.",
       "price": "359.00$",
-      "imageUrl": "floragardens.jpg"
+      "imageUrl": "../assests/floragardens.jpg",
+      "imageUrl2": "../assests/flora2.jpg",
+      "imageUrl3": "../assests/flora3.jpg"
     },
     {
       "id": 8,
