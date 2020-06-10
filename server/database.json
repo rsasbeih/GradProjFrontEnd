@@ -1,212 +1,275 @@
 {
-    "venues": [{
-            "id": 1,
-            "businessOwner": "Mohammed ",
-            "name": "Qalat Al-Sham Venue",
-            "type": "Wedding",
-            "description": "Qaat A Sham Venue Vero quidem adipisci non maxime illo soluta ex. Nihil soluta quibusdam molestias magni rerum praesentium similique ut sit. Distinctio reprehenderit molestias et doloremque eius quo. Non reiciendis sapiente hic. ",
-            "price": "714.00",
-            "imageUrl": ["../assets/sham1.jpg", "../assets/sham2.jpg", "../assets/sham3.jpg"]
-
-        },
-        {
-            "id": 2,
-            "businessOwner": "Ahmed",
-            "name": " Red Rose Venues ",
-            "type": "Party",
-            "description": "Red Rose Venues Vero quidem adipisci non maxime illo soluta ex. Nihil soluta quibusdam molestias magni rerum praesentium similique ut sit. Distinctio reprehenderit molestias et doloremque eius quo. Non reiciendis sapiente hic.",
-            "price": "500.00",
-            "imageUrl": ["../assets/red1.jpg", "../assets/red2.jpg", "../assets/red3.jpg"]
-        },
-        {
-            "id": 3,
-            "businessOwner": "Zaid ",
-            "name": "Birzeit Grand Venue ",
-            "type": "Party",
-            "description": "Birzeit Grand Venue Vero quidem adipisci non maxime illo soluta ex. Nihil soluta quibusdam molestias magni rerum praesentium similique ut sit. Distinctio reprehenderit molestias et doloremque eius quo. Non reiciendis sapiente hic.",
-            "price": "528.00",
-            "imageUrl": ["../assets/grand1.jpg", "../assets/grand2.jpg", "../assets/grand3.jpg"]
-        },
-        {
-            "id": 4,
-            "businessOwner": "Birzeit University",
-            "name": "Kamal AbdulNaser Hall",
-            "type": "Conference ",
-            "description": "Kamal AbdulNaser Hall Vero quidem adipisci non maxime illo soluta ex. Nihil soluta quibusdam molestias magni rerum praesentium similique ut sit. Distinctio reprehenderit molestias et doloremque eius quo. Non reiciendis sapiente hic.",
-            "price": "534.00",
-            "imageUrl": ["../assets/kamal1.jpg", "../assets/kamal2.jpg", "../assets/kamal3.jpg"]
-        },
-        {
-            "id": 5,
-            "businessOwner": "Awwad",
-            "name": "Al-Shoroq Venue",
-            "type": "Wedding",
-            "description": "Al-Shoroq Venue Vero quidem adipisci non maxime illo soluta ex. Nihil soluta quibusdam molestias magni rerum praesentium similique ut sit. Distinctio reprehenderit molestias et doloremque eius quo. Non reiciendis sapiente hic.",
-            "price": "946.00",
-            "imageUrl": ["../assets/shoroq1.jpg", "../assets/shoroq2.jpg", "../assets/shoroq3.jpg"]
-        },
-        {
-            "id": 6,
-            "businessOwner": "Abedullah AlHamad ",
-            "name": "Salfit Big Venues",
-            "type": "Wedding",
-            "description": "Slafit Big Venues Vero quidem adipisci non maxime illo soluta ex. Nihil soluta quibusdam molestias magni rerum praesentium similique ut sit. Distinctio reprehenderit molestias et doloremque eius quo. Non reiciendis sapiente hic.",
-            "price": "370.00",
-            "imageUrl": ["../assets/salfit1.jpg", "../assets/salfit2.jpg", "../assets/salfit3.jpg"]
-        },
-        {
-            "id": 7,
-            "businessOwner": "Abu Alghoor ",
-            "name": "Flora Gardens",
-            "type": "Party",
-            "description": "Flora Gardens Vero quidem adipisci non maxime illo soluta ex. Nihil soluta quibusdam molestias magni rerum praesentium similique ut sit. Distinctio reprehenderit molestias et doloremque eius quo. Non reiciendis sapiente hic.",
-            "price": "359.00",
-            "imageUrl": ["../assets/flora1.jpg", "../assets/flora2.jpg", "../assets/flora3.jpg"]
-        },
-        {
-            "id": 8,
-            "businessOwner": "Danial Strosin",
-            "name": "Larson Inc",
-            "type": "Party",
-            "description": "Accusantium deserunt praesentium iure et incidunt voluptatem odit et. Nam vel ipsam unde corporis dignissimos delectus molestias. Possimus ut rerum veritatis fuga debitis cum. Deserunt est odit recusandae. Sequi iste saepe iste.",
-            "price": "151.00",
-            "imageUrl": ["https://images.unsplash.com/photo-1526045004414-3e7ed02f9ca1?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=1600"]
-        },
-        {
-            "id": 9,
-            "businessOwner": "Odell Pacocha",
-            "name": "Willms, Franecki and Moen",
-            "description": "Vero quidem adipisci non maxime illo soluta ex. Nihil soluta quibusdam molestias magni rerum praesentium similique ut sit. Distinctio reprehenderit molestias et doloremque eius quo. Non reiciendis sapiente hic.",
-            "price": "268.00",
-            "imageUrl": ["https://images.unsplash.com/photo-1564631028038-08c7b71eee1c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=1600"]
-        },
-        {
-            "id": 10,
-            "businessOwner": "Zack Kling DVM",
-            "name": "Boyer - Kuhic",
-            "type": "Conference",
-            "description": "Necessitatibus quia modi eum id ipsam doloremque fuga. Perspiciatis quam qui. Beatae velit fugit et. Quis nemo aut animi.",
-            "price": "624.00",
-            "imageUrl": ["https://images.unsplash.com/photo-1577969182166-d1a497458e6d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=1600"]
-        }
-    ],
-    "reservations": [{
-            "id": 1,
-            "venueId": 2,
-            "reservationDate": "6/1/2020",
-            "customerName": "Ruba Sbeih",
-            "customerEmail": "rsasbeih@gmail.com",
-            "customerPhone": "0523333333",
-            "noOfPeople": 50
-        },
-        {
-            "id": 2,
-            "venueId": 2,
-            "reservationDate": "6/1/2020",
-            "customerName": "Ruba Sbeih",
-            "customerEmail": "rsasbeih@gmail.com",
-            "customerPhone": "0523333333",
-            "noOfPeople": 50
-        },
-        {
-            "id": 5,
-            "venueId": 2,
-            "reservationDate": "6/1/2020",
-            "customerName": "Ruba Sbeih",
-            "customerEmail": "haruhisbeih@gmail.com",
-            "customerPhone": "0523333333",
-            "noOfPeople": 50
-        },
-        {
-            "id": "_sf6h8a5xn",
-            "venueId": 2,
-            "customerName": "Yusuf Sbeih",
-            "customerEmail": "r@r.com",
-            "customerPhone": "222-2222",
-            "noOfPeople": 99
-        },
-        {
-            "id": "_5llmc1bcl",
-            "venueId": 2,
-            "customerName": "Yusuf Sbeih",
-            "customerEmail": "haruhisbeih@gmail.com",
-            "customerPhone": "0523333333",
-            "noOfPeople": 56,
-            "customerId": 3
-        },
-        {
-            "id": "_bb7e3aeya",
-            "venueId": 2,
-            "customerName": "Ziyad Sbeih",
-            "customerEmail": "z@z.com",
-            "customerPhone": "0529999999",
-            "noOfPeople": 45,
-            "customerId": "_l0dlejjc3"
-        },
-        {
-            "id": "_gsuwz2esy",
-            "venueId": 2,
-            "customerName": "Ruba Sbeih",
-            "customerEmail": "r@r.com",
-            "customerPhone": "0523333333",
-            "noOfPeople": 78,
-            "customerId": 1
-        },
-        {
-            "id": "_gcv3bdtzq",
-            "customerName": "Yusuf Sbeih",
-            "customerEmail": "haruhisbeih@gmail.com",
-            "customerPhone": "0545555555",
-            "noOfPeople": 55,
-            "customerId": 3
-        },
-        {
-            "id": "_3tx8gcgap",
-            "venueId": "4",
-            "customerName": "Ziyad Sbeih",
-            "customerEmail": "z@z.com",
-            "customerPhone": "0524444444",
-            "noOfPeople": 67,
-            "customerId": "_l0dlejjc3"
-        },
-        {
-            "id": "_h5fuzxf1t",
-            "venueId": "3",
-            "customerName": "Ruba Sbeih",
-            "customerEmail": "r@r.com",
-            "customerPhone": "0546666666",
-            "noOfPeople": 34,
-            "customerId": 1
-        }
-    ],
-    "users": [{
-            "id": 1,
-            "fname": "Ruba",
-            "lname": "Sbeih",
-            "email": "rsasbeih@gmail.com",
-            "mobileNum": "0523333333",
-            "username": "ruba123",
-            "password": "ruba123"
-        },
-        {
-            "id": 2,
-            "email": "olivier@mail.com",
-            "password": "bestPassw0rd"
-        },
-        {
-            "id": 3,
-            "fname": "Yusuf",
-            "lname": "Sbeih",
-            "email": "rsasbeih@gmail.com",
-            "mobileNum": "0523333333",
-            "username": "yusuf123",
-            "password": "yusuf123"
-        },
-        {
-            "id": "_l0dlejjc3",
-            "username": "ziyad123",
-            "password": "ziyad123",
-            "email": "z@z.com"
-        }
-    ]
+  "venues": [
+    {
+      "id": 1,
+      "businessOwner": "Mohammed ",
+      "name": "Qalat Al-Sham Venue",
+      "type": "Wedding",
+      "location": "Ramallah",
+      "NumberOfPeople":  "50",
+      "description": "Qaat A Sham Venue Vero quidem adipisci non maxime illo soluta ex. Nihil soluta quibusdam molestias magni rerum praesentium similique ut sit. Distinctio reprehenderit molestias et doloremque eius quo. Non reiciendis sapiente hic. ",
+      "price": "714.00",
+      "imageUrl": [
+        "../assets/sham1.jpg",
+        "../assets/sham2.jpg",
+        "../assets/sham3.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "businessOwner": "Ahmed",
+      "name": " Red Rose Venues ",
+      "type": "Party",
+      "location": "Salfit",
+      "NumberOfPeople": "20",
+      "description": "Red Rose Venues Vero quidem adipisci non maxime illo soluta ex. Nihil soluta quibusdam molestias magni rerum praesentium similique ut sit. Distinctio reprehenderit molestias et doloremque eius quo. Non reiciendis sapiente hic.",
+      "price": "500.00",
+      "imageUrl": [
+        "../assets/red1.jpg",
+        "../assets/red2.jpg",
+        "../assets/red3.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "businessOwner": "Zaid ",
+      "name": "Birzeit Grand Venue ",
+      "type": "Party",
+      "location": "Ramallah",
+      "NumberOfPeople": "50",
+      "description": "Birzeit Grand Venue Vero quidem adipisci non maxime illo soluta ex. Nihil soluta quibusdam molestias magni rerum praesentium similique ut sit. Distinctio reprehenderit molestias et doloremque eius quo. Non reiciendis sapiente hic.",
+      "price": "528.00",
+      "imageUrl": [
+        "../assets/grand1.jpg",
+        "../assets/grand2.jpg",
+        "../assets/grand3.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "businessOwner": "Birzeit University",
+      "name": "Kamal AbdulNaser Hall",
+      "type": "Conference ",
+      "location": "Salfit",
+      "NumberOfPeople": "30",
+      "description": "Kamal AbdulNaser Hall Vero quidem adipisci non maxime illo soluta ex. Nihil soluta quibusdam molestias magni rerum praesentium similique ut sit. Distinctio reprehenderit molestias et doloremque eius quo. Non reiciendis sapiente hic.",
+      "price": "534.00",
+      "imageUrl": [
+        "../assets/kamal1.jpg",
+        "../assets/kamal2.jpg",
+        "../assets/kamal3.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "businessOwner": "Awwad",
+      "name": "Al-Shoroq Venue",
+      "type": "Wedding",
+      "location": "Salfit",
+      "NumberOfPeople": "20",
+      "description": "Al-Shoroq Venue Vero quidem adipisci non maxime illo soluta ex. Nihil soluta quibusdam molestias magni rerum praesentium similique ut sit. Distinctio reprehenderit molestias et doloremque eius quo. Non reiciendis sapiente hic.",
+      "price": "946.00",
+      "imageUrl": [
+        "../assets/shoroq1.jpg",
+        "../assets/shoroq2.jpg",
+        "../assets/shoroq3.jpg"
+      ]
+    },
+    {
+      "id": 6,
+      "businessOwner": "Abedullah AlHamad ",
+      "name": "Salfit Big Venues",
+      "type": "Wedding",
+      "location": "Ramallah",
+      "NumberOfPeople": "30",
+      "description": "Slafit Big Venues Vero quidem adipisci non maxime illo soluta ex. Nihil soluta quibusdam molestias magni rerum praesentium similique ut sit. Distinctio reprehenderit molestias et doloremque eius quo. Non reiciendis sapiente hic.",
+      "price": "370.00",
+      "imageUrl": [
+        "../assets/salfit1.jpg",
+        "../assets/salfit2.jpg",
+        "../assets/salfit3.jpg"
+      ]
+    },
+    {
+      "id": 7,
+      "businessOwner": "Abu Alghoor ",
+      "name": "Flora Gardens",
+      "type": "Party",
+      "location": "Ramallah",
+      "NumberOfPeople": "50",
+      "description": "Flora Gardens Vero quidem adipisci non maxime illo soluta ex. Nihil soluta quibusdam molestias magni rerum praesentium similique ut sit. Distinctio reprehenderit molestias et doloremque eius quo. Non reiciendis sapiente hic.",
+      "price": "359.00",
+      "imageUrl": [
+        "../assets/flora1.jpg",
+        "../assets/flora2.jpg",
+        "../assets/flora3.jpg"
+      ]
+    },
+    {
+      "id": 8,
+      "businessOwner": "Danial Strosin",
+      "name": "Larson Inc",
+      "type": "Party",
+      "location": "Ramallah",
+      "NumberOfPeople": "50",
+      "description": "Accusantium deserunt praesentium iure et incidunt voluptatem odit et. Nam vel ipsam unde corporis dignissimos delectus molestias. Possimus ut rerum veritatis fuga debitis cum. Deserunt est odit recusandae. Sequi iste saepe iste.",
+      "price": "151.00",
+      "imageUrl": [
+        "https://images.unsplash.com/photo-1526045004414-3e7ed02f9ca1?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=1600"
+      ]
+    },
+    {
+      "id": 9,
+      "businessOwner": "Odell Pacocha",
+      "name": "Willms, Franecki and Moen",
+      "type": "Party",
+      "location": "Ramallah",
+      "NumberOfPeople": "50",
+      "description": "Vero quidem adipisci non maxime illo soluta ex. Nihil soluta quibusdam molestias magni rerum praesentium similique ut sit. Distinctio reprehenderit molestias et doloremque eius quo. Non reiciendis sapiente hic.",
+      "price": "268.00",
+      "imageUrl": [
+        "https://images.unsplash.com/photo-1564631028038-08c7b71eee1c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=1600"
+      ]
+    },
+    {
+      "id": 10,
+      "businessOwner": "Zack Kling DVM",
+      "name": "Boyer - Kuhic",
+      "type": "Conference",
+      "location": "Ramallah",
+      "NumberOfPeople": "50",
+      "description": "Necessitatibus quia modi eum id ipsam doloremque fuga. Perspiciatis quam qui. Beatae velit fugit et. Quis nemo aut animi.",
+      "price": "624.00",
+      "imageUrl": [
+        "https://images.unsplash.com/photo-1577969182166-d1a497458e6d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=1600"
+      ]
+    }
+  ],
+  "reservations": [
+    {
+      "id": 1,
+      "venueId": 2,
+      "reservationDate": "6/1/2020",
+      "customerName": "Ruba Sbeih",
+      "customerEmail": "rsasbeih@gmail.com",
+      "customerPhone": "0523333333",
+      "noOfPeople": 50
+    },
+    {
+      "id": 2,
+      "venueId": 2,
+      "reservationDate": "6/1/2020",
+      "customerName": "Ruba Sbeih",
+      "customerEmail": "rsasbeih@gmail.com",
+      "customerPhone": "0523333333",
+      "noOfPeople": 50
+    },
+    {
+      "id": 5,
+      "venueId": 2,
+      "reservationDate": "6/1/2020",
+      "customerName": "Ruba Sbeih",
+      "customerEmail": "haruhisbeih@gmail.com",
+      "customerPhone": "0523333333",
+      "noOfPeople": 50
+    },
+    {
+      "id": "_sf6h8a5xn",
+      "venueId": 2,
+      "customerName": "Yusuf Sbeih",
+      "customerEmail": "r@r.com",
+      "customerPhone": "222-2222",
+      "noOfPeople": 99
+    },
+    {
+      "id": "_5llmc1bcl",
+      "venueId": 2,
+      "customerName": "Yusuf Sbeih",
+      "customerEmail": "haruhisbeih@gmail.com",
+      "customerPhone": "0523333333",
+      "noOfPeople": 56,
+      "customerId": 3
+    },
+    {
+      "id": "_bb7e3aeya",
+      "venueId": 2,
+      "customerName": "Ziyad Sbeih",
+      "customerEmail": "z@z.com",
+      "customerPhone": "0529999999",
+      "noOfPeople": 45,
+      "customerId": "_l0dlejjc3"
+    },
+    {
+      "id": "_gsuwz2esy",
+      "venueId": 2,
+      "customerName": "Ruba Sbeih",
+      "customerEmail": "r@r.com",
+      "customerPhone": "0523333333",
+      "noOfPeople": 78,
+      "customerId": 1
+    },
+    {
+      "id": "_gcv3bdtzq",
+      "customerName": "Yusuf Sbeih",
+      "customerEmail": "haruhisbeih@gmail.com",
+      "customerPhone": "0545555555",
+      "noOfPeople": 55,
+      "customerId": 3
+    },
+    {
+      "id": "_3tx8gcgap",
+      "venueId": "4",
+      "customerName": "Ziyad Sbeih",
+      "customerEmail": "z@z.com",
+      "customerPhone": "0524444444",
+      "noOfPeople": 67,
+      "customerId": "_l0dlejjc3"
+    },
+    {
+      "id": "_h5fuzxf1t",
+      "venueId": "3",
+      "customerName": "Ruba Sbeih",
+      "customerEmail": "r@r.com",
+      "customerPhone": "0546666666",
+      "noOfPeople": 34,
+      "customerId": 1
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "fname": "Ruba",
+      "lname": "Sbeih",
+      "email": "rsasbeih@gmail.com",
+      "mobileNum": "0523333333",
+      "username": "ruba123",
+      "password": "ruba123"
+    },
+    {
+      "id": 2,
+      "email": "olivier@mail.com",
+      "password": "bestPassw0rd"
+    },
+    {
+      "id": 3,
+      "fname": "Yusuf",
+      "lname": "Sbeih",
+      "email": "rsasbeih@gmail.com",
+      "mobileNum": "0523333333",
+      "username": "yusuf123",
+      "password": "yusuf123"
+    },
+    {
+      "id": "_l0dlejjc3",
+      "username": "ziyad123",
+      "password": "ziyad123",
+      "email": "z@z.com"
+    },
+    {
+      "id": "_h29h4g5cw",
+      "username": "maen",
+      "password": "123456",
+      "email": "taqwa.awadallah@yahoo.com"
+    }
+  ]
 }
