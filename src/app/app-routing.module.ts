@@ -24,6 +24,7 @@ const routes: Routes = [
   {path: 'about_us',component: AboutUsComponent},
   {path: 'watchlist',component: WatchlistComponent},
   {path: 'browse',component: BrowseComponent},
+  {path: 'browse/:type',component: BrowseComponent},
   {path: 'venue_info',component: VenueInfoComponent},
   {path: 'venue_info/:id',component: VenueInfoComponent},
   {path: 'reserve_venue',component: ReserveVenueComponent},

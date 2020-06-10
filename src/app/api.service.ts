@@ -32,4 +32,7 @@ export class ApiService {
   public getReservationForSpecificUser(id: String){
     return this.httpClient.get(this.SERVER_RESERVATION_URL+"?customerId="+id)
   }
+  public getSpecificVenue(type:String){
+    return this.httpClient.get(this.SERVER_VENUE_URL+"?type="+type);
+  }
 }
