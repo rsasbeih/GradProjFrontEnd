@@ -29,4 +29,7 @@ export class ApiService {
   public register(data:any){
     return this.httpClient.post(this.SERVER_USER_URL,data);
   }
+  public getReservationForSpecificUser(id: String){
+    return this.httpClient.get(this.SERVER_RESERVATION_URL+"?customerId="+id)
+  }
 }

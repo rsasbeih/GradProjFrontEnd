@@ -36,6 +36,7 @@ import { LoginDialogComponent } from './login-dialog/login-dialog.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
 import { ManageVenuesComponent } from './manage-venues/manage-venues.component';
 import { AddVenueComponent } from './add-venue/add-venue.component';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 @NgModule({
   declarations: [
     AppComponent,
@@ -75,6 +76,7 @@ import { AddVenueComponent } from './add-venue/add-venue.component';
     MatListModule,
     MatCardModule,
     MatCheckboxModule,
+    MatSnackBarModule,
     MatDialogModule,
     BrowserAnimationsModule,
     NgbModule

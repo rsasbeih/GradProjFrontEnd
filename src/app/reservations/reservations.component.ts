@@ -18,17 +18,18 @@ export class ReservationsComponent implements OnInit {
 
   ngOnInit(): void {
     this.currentUserService.currentMessage.subscribe(message => this.currentUser = message);
-    console.log(this.currentUser);
-    this.apiService.get().subscribe((data: any[])=>{  
-			console.log(data);  
-      this.venues = data;  
-    })
-    this.apiService.getReservations().subscribe((data: any[])=>{  
+    console.log(this.currentUser.id);
+    this.apiService.getReservationForSpecificUser(this.currentUser.id).subscribe((data: any[])=>{  
 			console.log(data);  
       this.reservations = data;  
+      for(let r of this.reservations){
+        this.apiService.getById(r.venueId).subscribe((data: any)=>{  
+          console.log(data);  
+          this.venues.push(data);
+        })  
+      }
     })
-    
-    
+    console.log(this.reservations.length);
   }
 
 }
