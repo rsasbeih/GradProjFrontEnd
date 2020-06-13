@@ -45,6 +45,12 @@ export class ApiService {
   public getSpecificVenue(type:String){
     return this.httpClient.get(this.SERVER_VENUE_URL+"?type="+type);
   }
+  // public getSpecificVenueLocation(location:String){
+  //   return this.httpClient.get(this.SERVER_VENUE_URL+"?location="+location);
+  // }
+  // public getSpecificVenueLocationAndType(type:String,location:String){
+  //   return this.httpClient.get(this.SERVER_VENUE_URL+"?location="+location+"&type="+type);
+  // }
   public loginBO(){
     return this.httpClient.get(this.SERVER_BO_URL);
   }

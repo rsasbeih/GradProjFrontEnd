@@ -18,21 +18,45 @@ export class BrowseComponent implements OnInit {
   closest = false;
   currentUser="user0";
   type:string;
+  location:string;
   constructor(private apiService: ApiService,private data: CurrentUserService,private route: ActivatedRoute) { 
 
     this.route.params.subscribe( params => {
     console.log(params);
     this.type=params.type;
+    //this.location=params.location;
     // this.currentVenueObj=params; 
   });
   }
 	ngOnInit() {
     window.scroll(0,0);
+    // if(this.type!=null&&this.location!=null){
+    //   this.apiService.getSpecificVenueLocationAndType(this.location,this.type).subscribe((data: any[])=>{  
+    //     console.log(data);  
+    //     this.venues = data;  
+        
+    //   }) 
+    // }
+     if(this.type!=null){
+    this.apiService.getSpecificVenue(this.type).subscribe((data: any[])=>{  
+			console.log(data);  
+      this.venues = data;  
+      
+    }) 
+   }
+  //  else if(this.location!=null){
+  //   this.apiService.getSpecificVenueLocation(this.location).subscribe((data: any[])=>{  
+	// 		console.log(data);  
+  //     this.venues = data;  
+      
+  //   }) 
+  //  }
+    else{
 		this.apiService.get().subscribe((data: any[])=>{  
 			console.log(data);  
       this.venues = data;  
       
-    })  
+    })  }
     this.data.currentMessage.subscribe(message => this.currentUser = message);
 	}
   newMessage() {

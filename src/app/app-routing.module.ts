@@ -26,6 +26,8 @@ const routes: Routes = [
   {path: 'watchlist',component: WatchlistComponent},
   {path: 'browse',component: BrowseComponent},
   {path: 'browse/:type',component: BrowseComponent},
+  // {path: 'browse/:location',component: BrowseComponent},
+  // {path: 'browse/:type/:location',component: BrowseComponent},
   {path: 'venue_info',component: VenueInfoComponent},
   {path: 'venue_info/:id',component: VenueInfoComponent},
   {path: 'reserve_venue',component: ReserveVenueComponent},
