@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BOProfileComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    window.scroll(0,0);
+   }
 
   ngOnInit(): void {
+    window.scroll(0,0);
   }
 
 }

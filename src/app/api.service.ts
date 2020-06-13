@@ -57,4 +57,7 @@ export class ApiService {
   public deleteReservation(id: String){
     return this.httpClient.delete(this.SERVER_RESERVATION_URL+"/"+id);
   }
+  public addVenue(data:any){
+    return this.httpClient.post(this.SERVER_VENUE_URL,data);
+  }
 }

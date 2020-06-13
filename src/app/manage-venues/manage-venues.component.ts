@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {CurrentUserService} from '../current-user.service';
 import { ApiService } from '../api.service';
 import {MatSnackBar} from '@angular/material/snack-bar';
+import {Router} from '@angular/router';
 @Component({
   selector: 'app-manage-venues',
   templateUrl: './manage-venues.component.html',
@@ -14,7 +15,7 @@ export class ManageVenuesComponent implements OnInit {
   bovenues=[];
   reservations=[];
   showVenues=true;
-  constructor(private currentUserService:CurrentUserService,private apiService: ApiService,private _snackBar: MatSnackBar) {
+  constructor(private currentUserService:CurrentUserService,private apiService: ApiService,private _snackBar: MatSnackBar,private router: Router) {
     window.scroll(0,0);  
     this.currentUserService.currentMessage.subscribe(message => this.currentUser = message);
     console.log(this.currentUser);
@@ -50,11 +51,13 @@ export class ManageVenuesComponent implements OnInit {
       console.log("Implement delete functionality here");
       this.apiService.deleteVenue(id).subscribe();
       this.openSnackBar("Venue was Deleted!", "Close");
-      setTimeout(function (){
+      // setTimeout(function (){
 
-        window.location.reload();
+      //   window.location.reload();
       
-      }, 1000);
+      // }, 1000);
+      this.router.navigateByUrl("/boprofile");
+      
     }
   }
   openSnackBar(message: string, action: string) {

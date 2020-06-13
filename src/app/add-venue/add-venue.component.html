@@ -1,1 +1,73 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div class="background">
+    <h1>Add Your Venue</h1>
+    <div>
+        <br/>
+        <h2>Please enter the following information to add your venue</h2>
+        <br/>
+    </div>
+    <div>
+        <form style="text-align: center;flex: 1;">
+            <div class="example-container">
+                <mat-form-field appearance="fill">
+                    <mat-label>Name</mat-label>
+                    <input matInput placeholder="Name of Venue" [formControl]="name" required [(ngModel)]="nameValue">
+                    <mat-error *ngIf="name.invalid">{{getNameErrorMessage()}}</mat-error>
+                </mat-form-field>
+            </div>
+            <div class="example-container">
+                <mat-form-field appearance="fill">
+                    <mat-label>Event Type</mat-label>
+                    <mat-select matInput placeholder="Event Type" [formControl]="eventType" required [(ngModel)]="eventTypeValue">
+                        <mat-option value="Wedding">Wedding</mat-option>
+                        <mat-option value="Conference">Conference</mat-option>
+                        <mat-option value="Party">Party</mat-option>
+                    </mat-select>
+                    <mat-error *ngIf="eventType.invalid">{{getEventTypeErrorMessage()}}</mat-error>
+                </mat-form-field>
+            </div>
+            <div class="example-container">
+                <mat-form-field appearance="fill">
+                    <mat-label>Location</mat-label>
+                    <mat-select matInput placeholder="Location" [formControl]="location" required [(ngModel)]="locationValue">
+                        <mat-option value="Ramallah">Ramallah</mat-option>
+                    </mat-select>
+                    <mat-error *ngIf="location.invalid">{{getLocationErrorMessage()}}</mat-error>
+                </mat-form-field>
+            </div>
+            <div class="example-container">
+                <mat-form-field appearance="fill">
+                    <mat-label>Capacity</mat-label>
+                    <input type="number" matInput placeholder="Capacity" [formControl]="numOfPeople" required [(ngModel)]="numOfPeopleValue">
+                    <mat-error *ngIf="numOfPeople.invalid">{{getNumOfPeopleMessage()}}</mat-error>
+                </mat-form-field>
+            </div>
+            <div class="example-container">
+                <mat-form-field appearance="fill">
+                    <mat-label>Description of Venue</mat-label>
+                    <input matInput placeholder="Description" [formControl]="description" required [(ngModel)]="descriptionValue">
+                    <mat-error *ngIf="description.invalid">{{getDescriptionErrorMessage()}}</mat-error>
+                </mat-form-field>
+            </div>
+            <div class="example-container">
+                <mat-form-field appearance="fill">
+                    <mat-label>Price</mat-label>
+                    <input type="number" matInput placeholder="Price" [formControl]="price" required [(ngModel)]="priceValue">
+                    <mat-error *ngIf="price.invalid">{{getPriceMessage()}}</mat-error>
+                </mat-form-field>
+            </div>
+            <div class="example-container">
+                <!-- <mat-form-field appearance="fill"> -->
+                <mat-label style="margin-right: 579px;" class="mat-label">Image</mat-label>
+                <br>
+                <input style="margin-right: 293px;" type="file" placeholder="Image" [formControl]="image" required [formControl]="image" [(ngModel)]="imageValue" (change)="onSelectFile($event)">
+                <!-- </mat-form-field> -->
+            </div>
+            <div class="example-button-row">
+                <button mat-raised-button color="primary" (click)="addVenue()">ADD NOW</button>
+            </div>
 
+        </form>
+
+    </div>
+</div>
