@@ -1,18 +1,38 @@
 <div class="form">
     <form *ngIf="registerFormActive" class="register-form">
+        <h2 style="font-family: 'Lora';font-weight: bold;">CUSTOMER</h2>
         <input type="text" placeholder="Username" [(ngModel)]="username" name="username" />
         <input type="password" placeholder="Password" [(ngModel)]="password" name="password" />
         <input type="text" placeholder="Email Address" [(ngModel)]="email" name="email" />
         <button (click)="register() ">create</button>
-        <p class="message ">Already registered? <a (click)="showLogin() ">Sign In</a></p>
-        <p class="message ">Business Owner? <a (click)="showRegister() ">Sign Up Here</a></p>
+        <p class="message">Already registered? <a (click)="showLogin() ">Sign In</a></p>
+        <p class="message">Business Owner? <a (click)="showboRegister() ">Sign Up Here</a></p>
     </form>
     <form *ngIf="loginFormActive" class="login-form ">
+        <h2 style="font-family: 'Lora';font-weight: bold;">CUSTOMER</h2>
         <input type="text" placeholder="Username" [(ngModel)]="username" name="username" />
         <input type="password" placeholder="Password " [(ngModel)]="password " name="password " />
         <div *ngIf="notAUser" class="error_message" style="color:red; ">Invalid Credentials</div>
         <button (click)="checkLogin() ">login</button>
-        <p class="message ">Not registered? <a (click)="showRegister() ">Create an account</a></p>
-        <p class="message ">Business Owner? <a (click)="showRegister() ">Sign Up Here</a></p>
+        <p class="message">Not registered? <a (click)="showRegister() ">Create an account</a></p>
+        <p class="message">Business Owner? <a (click)="showbologinFormActive() ">Sign In Here</a></p>
+    </form>
+    <form *ngIf="bologinFormActive" class="login-form ">
+        <h2 style="font-family: 'Lora';font-weight: bold;">BUSINESS OWNER</h2>
+        <input type="text" placeholder="Username" [(ngModel)]="username" name="username" />
+        <input type="password" placeholder="Password " [(ngModel)]="password " name="password " />
+        <div *ngIf="notAUser" class="error_message" style="color:red; ">Invalid Credentials</div>
+        <button (click)="checkBoLogin() ">login</button>
+        <p class="message">Not registered? <a (click)="showboRegister() ">Create an account</a></p>
+        <p class="message">Customer? <a (click)="showLogin() ">Sign In Here</a></p>
+    </form>
+    <form *ngIf="boregisterFormActive" class="register-form">
+        <h2 style="font-family: 'Lora';font-weight: bold;">BUSINESS OWNER</h2>
+        <input type="text" placeholder="Username" [(ngModel)]="username" name="username" />
+        <input type="password" placeholder="Password" [(ngModel)]="password" name="password" />
+        <input type="text" placeholder="Email Address" [(ngModel)]="email" name="email" />
+        <button (click)="registerBO() ">create</button>
+        <p class="message">Already registered? <a (click)="showbologinFormActive() ">Sign In</a></p>
+        <p class="message">Customer? <a (click)="showRegister() ">Sign Up Here</a></p>
     </form>
 </div>

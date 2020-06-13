@@ -1,7 +1,8 @@
 {
     "venues": [{
             "id": 1,
-            "businessOwner": "Mohammed ",
+            "businessOwner": "Mohammed",
+            "boid": "3",
             "name": "Qalat Al-Sham Venue",
             "type": "Wedding",
             "location": "Ramallah",
@@ -15,23 +16,9 @@
             ]
         },
         {
-            "id": 2,
-            "businessOwner": "Ahmed",
-            "name": " Red Rose Venues ",
-            "type": "Party",
-            "location": "Salfit",
-            "NumberOfPeople": "20",
-            "description": "Red Rose Venues Vero quidem adipisci non maxime illo soluta ex. Nihil soluta quibusdam molestias magni rerum praesentium similique ut sit. Distinctio reprehenderit molestias et doloremque eius quo. Non reiciendis sapiente hic.",
-            "price": "500.00",
-            "imageUrl": [
-                "../assets/red1.jpg",
-                "../assets/red2.jpg",
-                "../assets/red3.jpg"
-            ]
-        },
-        {
             "id": 3,
-            "businessOwner": "Zaid ",
+            "businessOwner": "BirzeitUniversity",
+            "boid": "4",
             "name": "Birzeit Grand Venue ",
             "type": "Party",
             "location": "Ramallah",
@@ -46,7 +33,8 @@
         },
         {
             "id": 4,
-            "businessOwner": "Birzeit University",
+            "businessOwner": "BirzeitUniversity",
+            "boid": "4",
             "name": "Kamal AbdulNaser Hall",
             "type": "Conference ",
             "location": "Salfit",
@@ -62,6 +50,7 @@
         {
             "id": 5,
             "businessOwner": "Awwad",
+            "boid": "5",
             "name": "Al-Shoroq Venue",
             "type": "Wedding",
             "location": "Salfit",
@@ -76,7 +65,8 @@
         },
         {
             "id": 6,
-            "businessOwner": "Abedullah AlHamad ",
+            "businessOwner": "Awwad",
+            "boid": "5",
             "name": "Salfit Big Venues",
             "type": "Wedding",
             "location": "Ramallah",
@@ -91,7 +81,8 @@
         },
         {
             "id": 7,
-            "businessOwner": "Abu Alghoor ",
+            "businessOwner": "Awwad",
+            "boid": "5",
             "name": "Flora Gardens",
             "type": "Party",
             "location": "Ramallah",
@@ -106,7 +97,8 @@
         },
         {
             "id": 8,
-            "businessOwner": "Danial Strosin",
+            "businessOwner": "zaina",
+            "boid": "_sq8puc927",
             "name": "Larson Inc",
             "type": "Party",
             "location": "Ramallah",
@@ -119,7 +111,8 @@
         },
         {
             "id": 9,
-            "businessOwner": "Odell Pacocha",
+            "businessOwner": "zaina",
+            "boid": "_sq8puc927",
             "name": "Willms, Franecki and Moen",
             "type": "Party",
             "location": "Ramallah",
@@ -132,7 +125,8 @@
         },
         {
             "id": 10,
-            "businessOwner": "Zack Kling DVM",
+            "businessOwner": "zaina",
+            "boid": "_sq8puc927",
             "name": "Boyer - Kuhic",
             "type": "Conference",
             "location": "Ramallah",
@@ -145,68 +139,6 @@
         }
     ],
     "reservations": [{
-            "id": 1,
-            "venueId": 2,
-            "reservationDate": "6/1/2020",
-            "customerName": "Ruba Sbeih",
-            "customerEmail": "rsasbeih@gmail.com",
-            "customerPhone": "0523333333",
-            "noOfPeople": 50
-        },
-        {
-            "id": 2,
-            "venueId": 2,
-            "reservationDate": "6/1/2020",
-            "customerName": "Ruba Sbeih",
-            "customerEmail": "rsasbeih@gmail.com",
-            "customerPhone": "0523333333",
-            "noOfPeople": 50
-        },
-        {
-            "id": 5,
-            "venueId": 2,
-            "reservationDate": "6/1/2020",
-            "customerName": "Ruba Sbeih",
-            "customerEmail": "haruhisbeih@gmail.com",
-            "customerPhone": "0523333333",
-            "noOfPeople": 50
-        },
-        {
-            "id": "_sf6h8a5xn",
-            "venueId": 2,
-            "customerName": "Yusuf Sbeih",
-            "customerEmail": "r@r.com",
-            "customerPhone": "222-2222",
-            "noOfPeople": 99
-        },
-        {
-            "id": "_5llmc1bcl",
-            "venueId": 2,
-            "customerName": "Yusuf Sbeih",
-            "customerEmail": "haruhisbeih@gmail.com",
-            "customerPhone": "0523333333",
-            "noOfPeople": 56,
-            "customerId": 3
-        },
-        {
-            "id": "_bb7e3aeya",
-            "venueId": 2,
-            "customerName": "Ziyad Sbeih",
-            "customerEmail": "z@z.com",
-            "customerPhone": "0529999999",
-            "noOfPeople": 45,
-            "customerId": "_l0dlejjc3"
-        },
-        {
-            "id": "_gsuwz2esy",
-            "venueId": 2,
-            "customerName": "Ruba Sbeih",
-            "customerEmail": "r@r.com",
-            "customerPhone": "0523333333",
-            "noOfPeople": 78,
-            "customerId": 1
-        },
-        {
             "id": "_gcv3bdtzq",
             "customerName": "Yusuf Sbeih",
             "customerEmail": "haruhisbeih@gmail.com",
@@ -222,15 +154,6 @@
             "customerPhone": "0524444444",
             "noOfPeople": 67,
             "customerId": "_l0dlejjc3"
-        },
-        {
-            "id": "_h5fuzxf1t",
-            "venueId": "3",
-            "customerName": "Ruba Sbeih",
-            "customerEmail": "r@r.com",
-            "customerPhone": "0546666666",
-            "noOfPeople": 34,
-            "customerId": 1
         },
         {
             "id": "_rcfmu7vbn",
@@ -249,12 +172,14 @@
             "email": "rsasbeih@gmail.com",
             "mobileNum": "0523333333",
             "username": "ruba123",
-            "password": "ruba123"
+            "password": "ruba123",
+            "userType": "customer"
         },
         {
             "id": 2,
             "email": "olivier@mail.com",
-            "password": "bestPassw0rd"
+            "password": "bestPassw0rd",
+            "userType": "customer"
         },
         {
             "id": 3,
@@ -263,19 +188,51 @@
             "email": "rsasbeih@gmail.com",
             "mobileNum": "0523333333",
             "username": "yusuf123",
-            "password": "yusuf123"
+            "password": "yusuf123",
+            "userType": "customer"
         },
         {
             "id": "_l0dlejjc3",
             "username": "ziyad123",
             "password": "ziyad123",
-            "email": "z@z.com"
-        },
-        {
+            "email": "z@z.com",
+            "userType": "customer"
+        }
+    ],
+    "businessOwners": [{
             "id": "_h29h4g5cw",
             "username": "maen",
             "password": "123456",
-            "email": "taqwa.awadallah@yahoo.com"
+            "email": "taqwa.awadallah@yahoo.com",
+            "userType": "bo"
+        },
+        {
+            "id": "_sq8puc927",
+            "username": "zaina",
+            "password": "123",
+            "email": "z@zz.com",
+            "userType": "bo"
+        },
+        {
+            "id": "3",
+            "username": "Mohammed",
+            "password": "123",
+            "email": "m@zz.com",
+            "userType": "bo"
+        },
+        {
+            "id": "4",
+            "username": "BirzeitUniversity",
+            "password": "123",
+            "email": "b@zz.com",
+            "userType": "bo"
+        },
+        {
+            "id": "5",
+            "username": "Awwad",
+            "password": "123",
+            "email": "a@zz.com",
+            "userType": "bo"
         }
     ]
 }

@@ -70,12 +70,13 @@
                                                             <h1>FIND YOUR VENUE</h1>
                                                             <br>
                                                             <form>
+
                                                                 <mat-form-field appearance="fill" style="font-family: 'Lora'">
                                                                     <mat-label>Event Type</mat-label>
                                                                     <mat-select>
-                                                                        <mat-option value="option">Wedding</mat-option>
-                                                                        <mat-option value="option">Conference</mat-option>
-                                                                        <mat-option value="option">Party</mat-option>
+                                                                        <mat-option value="Wedding">Wedding</mat-option>
+                                                                        <mat-option value="Conference">Conference</mat-option>
+                                                                        <mat-option value="Party">Party</mat-option>
                                                                     </mat-select>
                                                                 </mat-form-field>
                                                                 <br>
@@ -83,7 +84,7 @@
                                                                 <mat-form-field appearance="fill" style="font-family: 'Lora'">
                                                                     <mat-label>Location</mat-label>
                                                                     <mat-select>
-                                                                        <mat-option value="option">Ramallah</mat-option>
+                                                                        <mat-option value="Ramallah">Ramallah</mat-option>
                                                                     </mat-select>
                                                                 </mat-form-field>
                                                                 <br>
@@ -95,7 +96,7 @@
                                                                 </mat-form-field>
                                                                 <br>
 
-                                                                <button mat-raised-button style="background-color: #321e65;color: white;font-family: 'Lora'" routerLink="/browse">SEARCH</button>
+                                                                <button mat-raised-button style="background-color: #321e65;color: white;font-family: 'Lora'" (click)="goToBrowseVenues()">SEARCH</button>
                                                             </form>
 
 

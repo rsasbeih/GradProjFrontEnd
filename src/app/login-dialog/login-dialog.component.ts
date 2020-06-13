@@ -16,6 +16,7 @@ export class LoginDialogComponent implements OnInit {
   password:string="";
   email:string=""
   users:any[];
+  businessOwners:any[];
   isUser=false;
   name:string;
   notAUser=false;
@@ -26,18 +27,41 @@ export class LoginDialogComponent implements OnInit {
       this.users = data;  
       
     })  
+    this.apiService.loginBO().subscribe((data: any[])=>{  
+			console.log(data);  
+      this.businessOwners = data;  
+      
+    }) 
     this.isUser=false;
     this.currentUserSerivce.currentMessage.subscribe(message => this.message = message);
 	}
   loginFormActive=true;
   registerFormActive=false;
+  bologinFormActive=false;
+  boregisterFormActive=false;
   showLogin(){
     this.loginFormActive=true;
     this.registerFormActive=false;
+    this.bologinFormActive=false;
+    this.boregisterFormActive=false;
   }
   showRegister(){
     this.loginFormActive=false;
     this.registerFormActive=true;
+    this.bologinFormActive=false;
+    this.boregisterFormActive=false;
+  }
+  showbologinFormActive(){
+    this.loginFormActive=false;
+    this.registerFormActive=false;
+    this.bologinFormActive=true;
+    this.boregisterFormActive=false;
+  }
+  showboRegister(){
+    this.loginFormActive=false;
+    this.registerFormActive=false;
+    this.bologinFormActive=false;
+    this.boregisterFormActive=true;
   }
   checkLogin(){
     for(let user of this.users){
@@ -67,7 +91,45 @@ export class LoginDialogComponent implements OnInit {
       {}
     }) 
     let user:any=null;
-    this.apiService.getById(randomId).subscribe((data: any)=>{  
+    //////////////////////////////////////////////////////
+    this.apiService.getCustomerById(randomId).subscribe((data: any)=>{  
+			user=data;    
+    });
+    this.isUser=true;
+    this.notAUser=false;
+    this.name=this.username;
+    this.currentUserSerivce.changeMessage(user);
+    this.dialogRef.close(this.name);
+  }
+  checkBoLogin(){
+    for(let user of this.businessOwners){
+      console.log(user);
+      if(user.username===this.username&&user.password===this.password){
+      this.isUser=true;
+      this.notAUser=false;
+      this.name=user.username;
+      console.log(user);
+      this.currentUserSerivce.changeMessage(user);
+      this.dialogRef.close(this.name);
+      break;
+    }
+    }
+    this.notAUser=true;
+  }
+  registerBO(){
+    const randomId='_' + Math.random().toString(36).substr(2, 9);
+    this.apiService.registerBO(
+      {
+        "id": randomId,
+        "username": this.username,
+        "password": this.password,
+        "email": this.email
+    }
+    ).subscribe((data: any[])=>{  
+      {}
+    }) 
+    let user:any=null;
+    this.apiService.getBOById(randomId).subscribe((data: any)=>{  
 			user=data;    
     });
     this.isUser=true;

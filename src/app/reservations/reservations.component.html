@@ -1,10 +1,10 @@
 <div class="background">
     <h1>Your Reservations</h1>
     <div class="flex-child-2">
-        <ul>
+        <ul *ngIf="showReservations">
             <li *ngFor="let venue of venues">
                 <!-- <div *ngIf="venue.customerId==this.currentUser.id"> -->
-                <mat-card class="example-card" routerLink="/venue_info/{{ venue.id }}">
+                <mat-card class="example-card">
                     <img mat-card-image src="{{ venue.imageUrl[0] }}" alt="Photo of a Venue">
                     <mat-card-header>
                         <div mat-card-avatar>
@@ -19,12 +19,15 @@
                         </p>
                     </mat-card-content>
                     <mat-card-actions align="end">
-                        <button mat-raised-button style="background-color: #af4e4c;color:white">CANCEL</button>
-                        <button mat-raised-button color="primary">BOOK AGAIN</button>
+                        <button mat-raised-button style="background-color: #af4e4c;color:white" (click)="deleteReservation(venue.id)">CANCEL</button>
+                        <button mat-raised-button color="primary" routerLink="/venue_info/{{ venue.id }}">BOOK AGAIN</button>
                     </mat-card-actions>
                 </mat-card>
                 <!-- </div> -->
             </li>
         </ul>
+        <div *ngIf="!showReservations">
+            <p>No Reservations</p>
+        </div>
     </div>
 </div>

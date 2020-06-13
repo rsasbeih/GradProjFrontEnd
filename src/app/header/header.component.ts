@@ -34,7 +34,15 @@ export class HeaderComponent implements OnInit{
     });
   }
   else{
-    this.router.navigateByUrl('/profile');
+    if(this.user.userType=="customer"){
+      console.log("customer");
+      this.router.navigateByUrl('/profile');
+    }
+    else if(this.user.userType=="bo"){
+      console.log("bo");
+      this.router.navigateByUrl('/boprofile');
+    }
+    //this.router.navigateByUrl('/profile');
   }
 }
  

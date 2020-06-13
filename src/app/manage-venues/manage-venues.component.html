@@ -9,7 +9,7 @@
         <ul>
             <li *ngFor="let venue of venues; let i = index;" style="display: flex;">
                 <!-- <div *ngIf="venue.customerId==this.currentUser.id"> -->
-                <mat-card style="display: inline-block;flex: auto;margin: 20px;" class="example-card" routerLink="/venue_info/{{ venue.id }}">
+                <mat-card style="display: inline-block;flex: auto;margin: 20px;" class="example-card">
                     <img mat-card-image src="{{ venue.imageUrl[0] }}" alt="Photo of a Venue">
                     <mat-card-header>
                         <div mat-card-avatar>
@@ -24,12 +24,12 @@
                         </p>
                     </mat-card-content>
                     <mat-card-actions align="end">
-                        <button mat-raised-button style="background-color: #af4e4c;color:white">DELETE</button>
+                        <button mat-raised-button style="background-color: #af4e4c;color:white" (click)="delete(venue.id)">DELETE</button>
                         <button mat-raised-button color="primary">UPDATE</button>
                     </mat-card-actions>
                 </mat-card>
 
-                <mat-card style="display: inline-block;flex: auto;margin: 20px;" class="example-card" routerLink="/venue_info/{{ venue.id }}">
+                <!-- <mat-card style="display: inline-block;flex: auto;margin: 20px;" class="example-card" routerLink="/venue_info/{{ venue.id }}">
                     <img mat-card-image src="{{ venue.imageUrl[1] }}" alt="Photo of a Venue">
                     <mat-card-header>
                         <div mat-card-avatar>
@@ -47,7 +47,7 @@
                         <button mat-raised-button style="background-color: #af4e4c;color:white">DELETE</button>
                         <button mat-raised-button color="primary">UPDATE</button>
                     </mat-card-actions>
-                </mat-card>
+                </mat-card> -->
                 <!-- </div> -->
             </li>
         </ul>
