@@ -86,7 +86,8 @@ export class LoginDialogComponent implements OnInit {
         "username": this.username,
         "password": this.password,
         "email": this.email,
-        "userType": "customer"
+        "userType": "customer",
+        "watchlist":[]
     }
     ).subscribe((data: any[])=>{  
       {}

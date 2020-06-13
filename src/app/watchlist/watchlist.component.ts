@@ -27,6 +27,10 @@ export class WatchlistComponent implements OnInit {
     //   this.venues = data;  
     // })
     for(var i=0; i<this.currentUser.watchlist.length;i++){
+      if(this.currentUser.watchlist.length<=0){
+      this.showVenues=false;
+      break;
+    }
       console.log(this.currentUser.watchlist[i]);
       this.apiService.getById(this.currentUser.watchlist[i]).subscribe((data: any)=>{  
       //  console.log(data);  

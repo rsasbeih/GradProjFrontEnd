@@ -161,24 +161,6 @@
       "customerPhone": "0545555555",
       "noOfPeople": 55,
       "customerId": 3
-    },
-    {
-      "id": "_3tx8gcgap",
-      "venueId": "4",
-      "customerName": "Ziyad Sbeih",
-      "customerEmail": "z@z.com",
-      "customerPhone": "0524444444",
-      "noOfPeople": 67,
-      "customerId": "_l0dlejjc3"
-    },
-    {
-      "id": "_rcfmu7vbn",
-      "venueId": "1",
-      "customerName": "Ziyad Sbeih",
-      "customerEmail": "haruhisbeih@gmail.com",
-      "customerPhone": "0529996666",
-      "noOfPeople": 45,
-      "customerId": "_l0dlejjc3"
     }
   ],
   "users": [
@@ -219,9 +201,7 @@
       "password": "ziyad123",
       "email": "z@z.com",
       "userType": "customer",
-      "watchlist": [
-        "3"
-      ]
+      "watchlist": []
     },
     {
       "id": "_bht0y61hb",
@@ -254,6 +234,74 @@
       "email": "m@m.com",
       "userType": "customer",
       "watchlist": []
+    },
+    {
+      "id": "_50smay7dm",
+      "username": "issa123",
+      "password": "issa123",
+      "email": "i@i.com",
+      "userType": "customer",
+      "watchlist": []
+    },
+    {
+      "id": "_15od7k22i",
+      "username": "issa123",
+      "password": "issa123",
+      "email": "i@i.com",
+      "userType": "customer",
+      "watchlist": []
+    },
+    {
+      "id": "_mr2p8picp",
+      "username": "m123",
+      "password": "m123",
+      "email": "m@m.com",
+      "userType": "customer",
+      "watchlist": []
+    },
+    {
+      "id": "_kjaj532xc",
+      "username": "m123",
+      "password": "m123",
+      "email": "m@m.com",
+      "userType": "customer",
+      "watchlist": []
+    },
+    {
+      "id": "_pizksq1k5",
+      "username": "y123",
+      "password": "y123",
+      "email": "y@yy.com",
+      "userType": "customer",
+      "watchlist": []
+    },
+    {
+      "id": "_a8qnopdt2",
+      "username": "y123",
+      "password": "y123",
+      "email": "y@yy.com",
+      "userType": "customer",
+      "watchlist": [
+        "10"
+      ]
+    },
+    {
+      "id": "_2lbsmya2h",
+      "username": "mm123",
+      "password": "mm123",
+      "email": "m@mm.com",
+      "userType": "customer",
+      "watchlist": []
+    },
+    {
+      "id": "_loziabdng",
+      "username": "mm123",
+      "password": "mm123",
+      "email": "m@mm.com",
+      "userType": "customer",
+      "watchlist": [
+        "10"
+      ]
     }
   ],
   "businessOwners": [
@@ -318,6 +366,48 @@
       "username": "yusuf",
       "password": "yusuf",
       "email": "y@y.com",
+      "userType": "bo"
+    },
+    {
+      "id": "_822aj9pb8",
+      "username": "t123",
+      "password": "t123",
+      "email": "t@t.com",
+      "userType": "bo"
+    },
+    {
+      "id": "_c52trzzy7",
+      "username": "t123",
+      "password": "t123",
+      "email": "t@t.com",
+      "userType": "bo"
+    },
+    {
+      "id": "_6joac245g",
+      "username": "b123",
+      "password": "b123",
+      "email": "b@bb.com",
+      "userType": "bo"
+    },
+    {
+      "id": "_yr1mzuxby",
+      "username": "b123",
+      "password": "b123",
+      "email": "b@bb.com",
+      "userType": "bo"
+    },
+    {
+      "id": "_1yeo863il",
+      "username": "y123",
+      "password": "y123",
+      "email": "yy@yy.com",
+      "userType": "bo"
+    },
+    {
+      "id": "_cm8imred1",
+      "username": "y123",
+      "password": "y123",
+      "email": "yy@yy.com",
       "userType": "bo"
     }
   ]

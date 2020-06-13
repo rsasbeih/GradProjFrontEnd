@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {CurrentUserService} from '../current-user.service';
 import { ApiService } from '../api.service';
 import {MatSnackBar} from '@angular/material/snack-bar';
+import {Router} from '@angular/router';
 @Component({
   selector: 'app-reservations',
   templateUrl: './reservations.component.html',
@@ -12,7 +13,7 @@ export class ReservationsComponent implements OnInit {
   venues=[];
   reservations=[];
   showReservations=true;
-  constructor(private currentUserService:CurrentUserService,private apiService: ApiService,private _snackBar: MatSnackBar) {
+  constructor(private currentUserService:CurrentUserService,private apiService: ApiService,private _snackBar: MatSnackBar,private router: Router) {
     window.scroll(0,0);  
     this.currentUserService.currentMessage.subscribe(message => this.currentUser = message);
     console.log(this.currentUser);
@@ -51,11 +52,12 @@ export class ReservationsComponent implements OnInit {
            }
         })
         this.openSnackBar("Reservation was Cancelled!", "Close");
-        setTimeout(function (){
+        // setTimeout(function (){
   
-          window.location.reload();
+        //   window.location.reload();
         
-        }, 1000);
+        // }, 1000);
+        this.router.navigateByUrl("/profile");
       }
   }
   openSnackBar(message: string, action: string) {
