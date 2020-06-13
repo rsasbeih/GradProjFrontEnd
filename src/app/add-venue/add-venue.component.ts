@@ -3,6 +3,7 @@ import {FormControl, Validators} from '@angular/forms';
 import { ApiService } from '../api.service';
 import {CurrentUserService} from '../current-user.service';
 import {Router} from '@angular/router';
+import {MatSnackBar} from '@angular/material/snack-bar';
 @Component({
   selector: 'app-add-venue',
   templateUrl: './add-venue.component.html',
@@ -12,7 +13,7 @@ export class AddVenueComponent implements OnInit {
 
   currentUser:any;
   currentVenue:any;
-  constructor(private apiService: ApiService,private currentUserService:CurrentUserService,private router: Router) { }
+  constructor(private apiService: ApiService,private currentUserService:CurrentUserService,private router: Router,private _snackBar: MatSnackBar) { }
 
  ngOnInit() {
     this.currentUserService.currentMessage.subscribe(message => this.currentUser = message);
@@ -105,8 +106,13 @@ export class AddVenueComponent implements OnInit {
     ).subscribe((data: any[])=>{  
       {}
     })
-    this.router.navigateByUrl('/thank_you');  
+    this.openSnackBar("Venue was Added!", "Close");
+    this.router.navigateByUrl('/boprofile');  
   }
-
+  openSnackBar(message: string, action: string) {
+    this._snackBar.open(message, action, {
+      duration: 2000,
+    });
+  }
 
 }

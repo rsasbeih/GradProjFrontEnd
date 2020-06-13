@@ -85,21 +85,27 @@ export class LoginDialogComponent implements OnInit {
         "id": randomId,
         "username": this.username,
         "password": this.password,
-        "email": this.email
+        "email": this.email,
+        "userType": "customer"
     }
     ).subscribe((data: any[])=>{  
       {}
     }) 
-    let user:any=null;
+    let user:any;
     //////////////////////////////////////////////////////
     this.apiService.getCustomerById(randomId).subscribe((data: any)=>{  
-			user=data;    
+      user=data;    
+      this.isUser=true;
+      this.notAUser=false;
+      this.name=this.username;
+      this.currentUserSerivce.changeMessage(user);
+      this.dialogRef.close(this.name);
     });
-    this.isUser=true;
-    this.notAUser=false;
-    this.name=this.username;
-    this.currentUserSerivce.changeMessage(user);
-    this.dialogRef.close(this.name);
+    // this.isUser=true;
+    // this.notAUser=false;
+    // this.name=this.username;
+    // this.currentUserSerivce.changeMessage(user);
+    // this.dialogRef.close(this.name);
   }
   checkBoLogin(){
     for(let user of this.businessOwners){
@@ -123,20 +129,26 @@ export class LoginDialogComponent implements OnInit {
         "id": randomId,
         "username": this.username,
         "password": this.password,
-        "email": this.email
+        "email": this.email,
+        "userType": "bo"
     }
     ).subscribe((data: any[])=>{  
       {}
     }) 
-    let user:any=null;
+    let user:any;
     this.apiService.getBOById(randomId).subscribe((data: any)=>{  
-			user=data;    
-    });
-    this.isUser=true;
+      user=data;    
+      this.isUser=true;
     this.notAUser=false;
     this.name=this.username;
     this.currentUserSerivce.changeMessage(user);
     this.dialogRef.close(this.name);
+    });
+    // this.isUser=true;
+    // this.notAUser=false;
+    // this.name=this.username;
+    // this.currentUserSerivce.changeMessage(user);
+    // this.dialogRef.close(this.name);
   }
 }
 

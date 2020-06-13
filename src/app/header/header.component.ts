@@ -14,9 +14,17 @@ export class HeaderComponent implements OnInit{
   isLoggedIn=false;
   constructor(public dialog: MatDialog,private router: Router,private currentUserService:CurrentUserService) {}
   ngOnInit() {
+  //  console.log(localStorage.getItem('currentUser'));
+ //   if(localStorage.getItem('currentUser')!=null){
+ //   this.user=localStorage.getItem('currentUser');
+ //   this.isLoggedIn=true;
+ //   }
+ //   else
     this.currentUserService.currentMessage.subscribe(message => this.user = message)
+   // this.user=localStorage.getItem('currentUser');
     if(name==""){
       this.name="Hello, "+this.user.username;
+      localStorage.setItem('currentUser', this.user);
     }
   }
   openDialog(): void {
