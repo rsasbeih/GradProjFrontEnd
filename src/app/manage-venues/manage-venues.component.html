@@ -6,8 +6,8 @@
         <mat-icon style="font-size: 80px;float: right;padding-right: 1em;" class="icon">control_point</mat-icon>
     </div>
     <div class="flex-child-2">
-        <ul>
-            <li *ngFor="let venue of venues; let i = index;" style="display: flex;">
+        <ul *ngIf="showVenues">
+            <li *ngFor="let venue of bovenues; let i = index;" style="display: flex;">
                 <!-- <div *ngIf="venue.customerId==this.currentUser.id"> -->
                 <mat-card style="display: inline-block;flex: auto;margin: 20px;" class="example-card">
                     <img mat-card-image src="{{ venue.imageUrl[0] }}" alt="Photo of a Venue">
@@ -51,5 +51,11 @@
                 <!-- </div> -->
             </li>
         </ul>
+        <div *ngIf="!showVenues" style="height: 30em;">
+            <br>
+            <br>
+            <br>
+            <h2 style="text-align: center;font-weight: bold;font-size: xx-large;">You Have No Venues</h2>
+        </div>
     </div>
 </div>

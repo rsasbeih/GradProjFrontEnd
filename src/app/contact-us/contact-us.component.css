@@ -14,3 +14,9 @@ h1 {
 .background {
     height: 40em;
 }
+
+.about-us {
+    display: inline-block;
+    padding: 5%;
+    font-weight: bold;
+}

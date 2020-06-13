@@ -13,6 +13,7 @@ export class ManageVenuesComponent implements OnInit {
   venues=[];
   bovenues=[];
   reservations=[];
+  showVenues=true;
   constructor(private currentUserService:CurrentUserService,private apiService: ApiService,private _snackBar: MatSnackBar) {
     window.scroll(0,0);  
     this.currentUserService.currentMessage.subscribe(message => this.currentUser = message);
@@ -33,6 +34,8 @@ export class ManageVenuesComponent implements OnInit {
           this.bovenues.push(v);
         }
       }
+      if(this.bovenues.length<=0)
+      this.showVenues=false;
       console.log(this.bovenues);
     })
     this.apiService.getReservations().subscribe((data: any[])=>{  
