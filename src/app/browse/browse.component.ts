@@ -38,4 +38,13 @@ export class BrowseComponent implements OnInit {
   newMessage() {
     this.data.changeMessage("Hello from Sibling")
   }
+  addToWatchList(){
+    if(this.currentUser==null){
+      alert("Please log in or register to be able watch this venue.");
+        }
+    else{
+     // this.currentUserService.changeVenue(this.currentVenueObj);
+     // this.router.navigateByUrl('/reserve_venue');
+    }
+  }
 }

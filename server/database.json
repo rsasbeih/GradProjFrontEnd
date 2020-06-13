@@ -190,13 +190,17 @@
       "mobileNum": "0523333333",
       "username": "ruba123",
       "password": "ruba123",
-      "userType": "customer"
+      "userType": "customer",
+      "watchlist": [
+        "1"
+      ]
     },
     {
       "id": 2,
       "email": "olivier@mail.com",
       "password": "bestPassw0rd",
-      "userType": "customer"
+      "userType": "customer",
+      "watchlist": []
     },
     {
       "id": 3,
@@ -206,42 +210,50 @@
       "mobileNum": "0523333333",
       "username": "yusuf123",
       "password": "yusuf123",
-      "userType": "customer"
+      "userType": "customer",
+      "watchlist": []
     },
     {
       "id": "_l0dlejjc3",
       "username": "ziyad123",
       "password": "ziyad123",
       "email": "z@z.com",
-      "userType": "customer"
+      "userType": "customer",
+      "watchlist": [
+        "3"
+      ]
     },
     {
       "id": "_bht0y61hb",
       "username": "zaina123",
       "password": "zaina123",
       "email": "zz@z.com",
-      "userType": "customer"
+      "userType": "customer",
+      "watchlist": []
     },
     {
       "id": "_fnumnr5at",
       "username": "r123",
       "password": "r123",
       "email": "r@rr.com",
-      "userType": "customer"
+      "userType": "customer",
+      "watchlist": []
     },
     {
       "id": "_z8d43kppj",
       "username": "m123",
       "password": "m123",
       "email": "m@m.com",
-      "userType": "customer"
+      "userType": "customer",
+      "watchlist": []
     },
     {
       "id": "_8to4bw0xe",
       "username": "m123",
       "password": "m123",
       "email": "m@m.com",
-      "userType": "customer"
+      "userType": "customer",
+      "watchlist": []
     }
   ],
   "businessOwners": [

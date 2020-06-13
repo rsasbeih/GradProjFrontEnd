@@ -7,7 +7,7 @@ import {CurrentUserService} from '../current-user.service';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import {Router} from '@angular/router';
 import { LoginDialogComponent } from '../login-dialog/login-dialog.component';
-
+import {MatSnackBar} from '@angular/material/snack-bar';
 @Component({
   selector: 'app-venue-info',
   templateUrl: './venue-info.component.html',
@@ -28,7 +28,7 @@ export class VenueInfoComponent implements OnInit {
   currentVenue:string;
   currentVenueObj:any;
   currentUser:any=null;
-  constructor(config: NgbCarouselConfig,private calendar: NgbCalendar, private route: ActivatedRoute,private apiService: ApiService,private currentUserService:CurrentUserService,public dialog: MatDialog,private router: Router) {
+  constructor(config: NgbCarouselConfig,private calendar: NgbCalendar, private route: ActivatedRoute,private apiService: ApiService,private currentUserService:CurrentUserService,public dialog: MatDialog,private router: Router,private _snackBar: MatSnackBar) {
     window.scroll(0,0);
     config.showNavigationArrows = true;
     config.showNavigationIndicators = true;
@@ -54,13 +54,18 @@ export class VenueInfoComponent implements OnInit {
     this.model = this.calendar.getToday();
   }
   goToReservePage(){
-    if(this.currentUser==null){
-      this.openDialog();
-    }
-    else{
+    // if(this.currentUser==null){
+    //   this.openDialog();
+    // }
+    // else{
+      if(this.currentUser==null){
+    alert("Please log in or register to reserve this venue.");
+      }
+  else{
     this.currentUserService.changeVenue(this.currentVenueObj);
     this.router.navigateByUrl('/reserve_venue');
   }
+ // }
   }
   openDialog(): void {
 
@@ -76,6 +81,24 @@ export class VenueInfoComponent implements OnInit {
     }
     });
 }
- 
+addToWatchList(){
+  if(this.currentUser==null){
+    alert("Please log in or register to be able watch this venue.");
+      }
+  else{
+   // this.currentUserService.changeVenue(this.currentVenueObj);
+   // this.router.navigateByUrl('/reserve_venue');
+   this.currentUser.watchlist.push(this.currentVenueObj.id);
+   this.apiService.updateWatchList(this.currentUser.id,this.currentUser).subscribe();
+   this.openSnackBar("Venue was added to your watchlist!", "Close");
+  // console.log(this.currentUser);
+  this.router.navigateByUrl("/profile");
+  }
+}
+openSnackBar(message: string, action: string) {
+  this._snackBar.open(message, action, {
+    duration: 2000,
+  });
+}
 
 }

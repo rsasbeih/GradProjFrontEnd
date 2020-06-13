@@ -60,4 +60,7 @@ export class ApiService {
   public addVenue(data:any){
     return this.httpClient.post(this.SERVER_VENUE_URL,data);
   }
+  public updateWatchList(id: String, data:any){
+    return this.httpClient.put(this.SERVER_USER_URL+"/"+id,data);
+  }
 }

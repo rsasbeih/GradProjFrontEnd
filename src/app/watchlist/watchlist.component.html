@@ -1,10 +1,11 @@
 <div class="background">
     <h1>Your Watchlist</h1>
     <div class="flex-child-2">
-        <ul>
+
+        <ul *ngIf="showVenues">
             <li *ngFor="let venue of venues">
                 <!-- <div *ngIf="venue.customerId==this.currentUser.id"> -->
-                <mat-card class="example-card" routerLink="/venue_info/{{ venue.id }}">
+                <mat-card class="example-card">
                     <img mat-card-image src="{{ venue.imageUrl[0] }}" alt="Photo of a Venue">
                     <mat-card-header>
                         <div mat-card-avatar>
@@ -19,12 +20,18 @@
                         </p>
                     </mat-card-content>
                     <mat-card-actions align="end">
-                        <button mat-raised-button style="background-color: #af4e4c;color:white">REMOVE FROM WATCHLIST</button>
-                        <button mat-raised-button color="primary">BOOK</button>
+                        <button mat-raised-button style="background-color: #af4e4c;color:white" (click)="removeFromWatchList(venue.id)">REMOVE FROM WATCHLIST</button>
+                        <button mat-raised-button color="primary" routerLink="/venue_info/{{ venue.id }}">BOOK</button>
                     </mat-card-actions>
                 </mat-card>
                 <!-- </div> -->
             </li>
         </ul>
+        <div *ngIf="!showVenues" style="height: 30em;">
+            <br>
+            <br>
+            <br>
+            <h2 style="text-align: center;font-weight: bold;font-size: xx-large;">There are no venues in your Watchlist.</h2>
+        </div>
     </div>
 </div>
